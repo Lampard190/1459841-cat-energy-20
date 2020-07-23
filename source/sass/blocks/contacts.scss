@@ -14,9 +14,9 @@
 }
 
 .contacts__address {
+  @include font-family-descr;
   margin-left: 20px;
   margin-right: 20px;
-  @include font-family-descr;
   font-size: 14px;
   line-height: 20px;
   text-align: left;

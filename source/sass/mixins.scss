@@ -1,16 +1,16 @@
 @mixin visually-hidden {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 @mixin alink {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 @mixin font-family-descr {
-    font-family: 'Arial', sans-serif;
-    color: $special_dark-grey;
+  font-family: 'Arial', sans-serif;
+  color: $special_dark-grey;
 }
