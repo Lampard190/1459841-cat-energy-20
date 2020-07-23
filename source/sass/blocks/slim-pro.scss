@@ -1,0 +1,35 @@
+.slim-pro {
+	background-color: $basic-grey;
+	margin: 20px;
+}
+
+.slim-pro__header {
+	color: $black;
+	font-size: 24px;
+	line-height: 37px;
+	margin-top: 30px;
+	margin-bottom: 29px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.slim-pro__description {
+	@include font-family-descr;
+	font-size: 14px;
+	line-height: 18px;
+	margin-left: 20px;
+	margin-right: 33px;
+	margin-bottom: 15px;
+	padding-bottom: 23px;
+	text-align: left;
+}
+
+.slim-pro__catalog {
+	font-size: 16px;
+	line-height: 16px;
+	color: $black;
+	text-align: left;
+	margin-left: 19px;
+	margin-bottom: 22px;
+	text-transform: uppercase;
+}

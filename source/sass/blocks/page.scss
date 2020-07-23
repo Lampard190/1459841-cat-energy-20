@@ -1,0 +1,9 @@
+.page {
+	height: 100%;
+	width: 320px;
+	margin: 0 auto;
+}
+
+.page a {
+	@include alink;
+}
