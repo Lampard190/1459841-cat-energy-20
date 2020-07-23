@@ -1,22 +1,22 @@
 .card {
-	width: 280px;
-	margin: 0 auto;
-	background-color: $white;
+    width: 280px;
+    margin: 0 auto;
+    background-color: $white;
 }
 
 .card__list {
-	list-style: none;
+    list-style: none;
 }
 
 .card__name {
-	color: $special_dark-grey-2;
-	text-transform: uppercase;
-	font-size: 16px;
-	line-height: 20px;
+    color: $special_dark-grey-2;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .card__buy {
-	color: $white;
-	background-color: $basic-green;
-	padding: 0px 48px;
+    color: $white;
+    background-color: $basic-green;
+    padding: 0px 48px;
 }
