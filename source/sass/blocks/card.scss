@@ -1,6 +1,7 @@
 .card {
   width: 280px;
-  margin: 0px auto;
+  margin-left: 20px;
+  margin-right: 20px; 
   background-color: $white;
 }
 
@@ -18,5 +19,5 @@
 .card__buy {
   color: $white;
   background-color: $basic-green;
-  padding: 0px 48px;
+  padding: 1px 48px;
 }
