@@ -1,0 +1,23 @@
+.contacts {
+  margin-top: 28px;
+  margin-bottom: 22px;
+}
+
+.contacts__header {
+  margin-left: 20px;
+  margin-right: 20px;
+  color: $black;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.contacts__address {
+  margin-left: 20px;
+  margin-right: 20px;
+  @include font-family-descr;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: left;
+}

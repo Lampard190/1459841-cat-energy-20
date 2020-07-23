@@ -1,14 +1,45 @@
 .page-main {
-    position: relative;
+  position: relative;
 }
 
 .page-main__header {
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 27px;
-    margin-bottom: 41px;
-    color: $black;
-    font-size: 36px;
-    line-height: 36px;
-    text-align: left;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 27px;
+  margin-bottom: 41px;
+  color: $black;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: left;
+}
+
+.page-main__title {
+  color: $black;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: left;
+  margin: 0 auto;
+  margin-bottom: 37px;
+}
+.page-main__description {
+  color: $black;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.page-main__form {
+  width: 280px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 32px;
+}
+
+.page-main__send {
+  color: $white;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: $basic-green;
 }
