@@ -2,21 +2,18 @@
   border: none;
 }
 
-.owner-data legend {
+.owner-data__title {
   color: $black;
   font-size: 24px;
   line-height: 26px;
   text-align: left;
 }
 
-.owner-data label {
+.owner-data__email,
+.owner-data__phone {
   color: $special_dark-grey;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   text-align: left;
-}
-
-.owner-data span {
-  @include visually-hidden;
 }

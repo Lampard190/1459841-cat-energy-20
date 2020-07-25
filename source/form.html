@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page-body">
@@ -12,6 +11,9 @@
         <img src="img/logo-mobile.svg" width="191" height="38" alt="Логотип cat energy (кот и текст)">
       </a>
       <nav class="main-nav">
+        <a class="main-nav__ahead" href="index.html" title="На главную">Главная</a>
+        <a class="main-nav__catalog" href="catalog.html" title="Каталог продукции">Каталог продукции</a>
+        <a class="main-nav__program" href="form.html" title="Подбор программы">Подбор программы</a>
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Меню</span></button>
       </nav>
     </header>
@@ -31,18 +33,18 @@
         <fieldset class="programs">
           <legend><span class="visually-hidden">Вид программы</span></legend>
             <input type="radio" name="thin" id="cat-thin" value="Похудение" checked>
-            <label for="cat-thin">Похудение</label>
+            <label class="programs__thin" for="cat-thin">Похудение</label>
             <input type="radio" name="increase" id="cat-increase" value="Набор массы">
-            <label for="cat-increase">Набор массы</label>
+            <label class="programs__increase" for="cat-increase">Набор массы</label>
             <input type="radio" name="not-known" id="cat-not-known" value="Не знаю">
-            <label for="cat-not-known">Не знаю (нужен ваш совет)</label>
+            <label class="programs__not-known" for="cat-not-known">Не знаю (нужен ваш совет)</label>
         </fieldset>
         <fieldset class="owner-data">
-          <legend>Контактные данные (владельца кота)</legend>
-            <label for="owner-email">E-mail:<sup>*</sup></label>
+          <legend class="owner-data__title">Контактные данные (владельца кота)</legend>
+            <label for="owner-data__email">E-mail:<sup>*</sup></label>
             <input class="owner-data__input owner-data__input--active" type="email" name="email" id="owner-email" placeholder="kuklachev@gmail.com" required>
             <button class="owner-data__button owner-data__button--active" type="button"><span class="visually-hidden">Иконка почты</span></button>
-            <label for="owner-telephone">Телефон:<sup>*</sup></label>
+            <label for="owner-data__phone">Телефон:<sup>*</sup></label>
             <input class="owner-data__input owner-data__input--active" type="tel" name="telephone" id="owner-telephone" placeholder="8 (960) 900-60-90" required>
             <button class="owner-data__button owner-data__button--active" type="button"><span class="visually-hidden">Иконка телефона</span></button>
           </fieldset>
@@ -53,13 +55,13 @@
           <fieldset class="additionally">
             <legend class="additionally__header">Дополнительно</legend>
               <input type="checkbox" name="sugar-sub" id="cat-sugar-sub" checked>
-              <label for="cat-sugar-sub">Сахарозаменитель</label>
+              <label class="additionally__sugar-sub" for="cat-sugar-sub">Сахарозаменитель</label>
               <input type="checkbox" name="water" id="cat-water">
-              <label for="cat-water">Питьевая вода</label>
+              <label class="additioally__water" for="cat-water">Питьевая вода</label>
               <input type="checkbox" name="milk" id="cat-milk">
-              <label for="cat-milk">Молоко</label>
+              <label class="additionally__milk" for="cat-milk">Молоко</label>
               <input type="checkbox" name="vitamins" id="cat-vitamins">
-              <label for="cat-vitamins">Витамины</label>
+              <label class="additionally__vitamins" for="cat-vitamins">Витамины</label>
           </fieldset>
           <button class="page-main__send" type="submit" value="Отправить заявку">Отправить заявку</button>
           <p class="page-main__text"><sup>*</sup> &mdash; Обязательные поля</p>

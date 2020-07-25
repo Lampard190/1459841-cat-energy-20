@@ -28,8 +28,5 @@
   text-align: center;
   width: 279px;
   background-color: $basic-grey;
-}
-
-.more-goods img {
-  margin: 0 auto;
+  @include alink;
 }

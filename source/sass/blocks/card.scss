@@ -14,10 +14,12 @@
   text-transform: uppercase;
   font-size: 16px;
   line-height: 20px;
+  @include alink;
 }
 
 .card__buy {
   color: $white;
   background-color: $basic-green;
   padding: 1px 48px;
+  @include alink;
 }

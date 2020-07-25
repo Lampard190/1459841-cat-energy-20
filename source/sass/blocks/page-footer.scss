@@ -7,11 +7,6 @@
   margin-bottom: 22px;
 }
 
-.page-footer span,
-.page-footer h2 {
-  @include visually-hidden;
-}
-
 .page-footer__logo {
   position: absolute;
   width: 128px;

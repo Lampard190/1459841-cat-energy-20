@@ -37,4 +37,5 @@
   background-color: $basic-green;
   font-size: 16px;
   text-align: center;
+  @include alink;
 }
