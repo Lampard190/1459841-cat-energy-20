@@ -25,6 +25,7 @@
 }
 
 .slim-pro__catalog {
+  @include alink;
   font-size: 16px;
   line-height: 16px;
   color: $black;
@@ -32,5 +33,4 @@
   margin-left: 19px;
   margin-bottom: 22px;
   text-transform: uppercase;
-  @include alink;
 }

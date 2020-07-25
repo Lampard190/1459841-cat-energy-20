@@ -33,9 +33,9 @@
 }
 
 .other-goods__buy {
+  @include alink;
   color: $white;
   background-color: $basic-green;
   font-size: 16px;
   text-align: center;
-  @include alink;
 }

@@ -1,11 +1,11 @@
 .main-nav__ahead,
 .main-nav__catalog,
 .main-nav__program {
+  @include alink;
   font-size: 20px;
   line-height: 20px;
   font-weight: 500px;
   text-transform: uppercase;
   color: $black;
   text-align: center;
-  @include alink;
 }

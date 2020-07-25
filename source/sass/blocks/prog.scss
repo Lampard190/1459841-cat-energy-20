@@ -24,11 +24,11 @@
 }
 
 .prog__form {
+  @include alink;
   color: $white;
   font-size: 14px;
   line-height: 18px;
   background-color: $basic-green;
   text-align: center;
   text-transform: uppercase;
-  @include alink;
 }
