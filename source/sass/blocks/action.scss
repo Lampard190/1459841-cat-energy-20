@@ -1,0 +1,28 @@
+.action {
+  background-color: $white;
+  margin-top: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.action__header {
+  color: $black;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: left;
+  margin-bottom: 42px;
+}
+
+.action__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 42px;
+}
+
+.action__item {
+  @include font-family-descr;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+}

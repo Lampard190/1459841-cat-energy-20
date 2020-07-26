@@ -1,0 +1,34 @@
+.prog {
+  background-image: url("../img/index-background-mobile@1x.jpg"), url("../img/index-can-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, contain;
+  background-color: $basic-green;
+  margin-top: 27px;
+}
+
+.prog__header {
+  color: $white;
+  font-size: 36px;
+  line-height: 36px;
+  margin-top: 27px;
+  text-align: center;
+}
+
+.prog__slog {
+  color: $white;
+  font-size: 14px;
+  line-height: 14px;
+  margin-top: 25px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.prog__form {
+  @include alink;
+  color: $white;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: $basic-green;
+  text-align: center;
+  text-transform: uppercase;
+}

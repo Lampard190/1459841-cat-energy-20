@@ -1,0 +1,20 @@
+.page-footer {
+  position: relative;
+  background-color: $white;
+  margin-top: 29px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 22px;
+}
+
+.page-footer__logo {
+  position: absolute;
+  width: 128px;
+  height: 24px;
+}
+
+.page-footer__academy {
+  color: $special_dark-grey;
+  font-size: 16px;
+  text-align: left;
+}

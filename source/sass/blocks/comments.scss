@@ -1,0 +1,21 @@
+.comments {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 27px;
+  margin-bottom: 27px;
+}
+
+.comments__header {
+  color: $black;
+  font-size: 24px;
+  line-height: 26px;
+  text-align: left;
+}
+
+.comments__text {
+  color: $special_dark-grey;
+  font-size: 16px;
+  line-height: 18px;
+  width: 280px;
+  height: 150px;
+}

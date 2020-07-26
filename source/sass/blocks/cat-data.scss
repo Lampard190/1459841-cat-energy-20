@@ -1,0 +1,13 @@
+.cat-data {
+  border: none;
+}
+
+.cat-data__name,
+.cat-data__weight,
+.cat-data__age {
+  color: $special_dark-grey;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: left;
+}

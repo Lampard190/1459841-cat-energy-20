@@ -1,0 +1,12 @@
+.programs {
+  border: none;
+}
+
+.programs__thin,
+.programs__increase,
+.programs__not-known {
+  color: $special_dark-grey-2;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+}
