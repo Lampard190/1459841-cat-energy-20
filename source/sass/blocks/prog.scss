@@ -1,9 +1,10 @@
 .prog {
-  background-image: url("../img/index-background-mobile@1x.jpg"), url("../img/index-can-mobile@1x.jpg");
-  background-repeat: no-repeat, no-repeat;
-  background-size: contain, contain;
-  background-color: $basic-green;
+  background-image: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg");
+  background-position: center 80%, center 0%;
+  background-repeat: no-repeat;
+  background-size: auto, contain;
   margin-top: 27px;
+  height: 480px;
 }
 
 .prog__header {
@@ -31,4 +32,7 @@
   background-color: $basic-green;
   text-align: center;
   text-transform: uppercase;
+  width: 280px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
