@@ -9,6 +9,20 @@
   list-style: none;
 }
 
+@media (min-width: $tablet-width) {
+  .card__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .card__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .card__name {
   @include alink;
   color: $special_dark-grey-2;

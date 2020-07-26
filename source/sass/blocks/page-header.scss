@@ -1,14 +1,26 @@
 .page-header {
+  display: flex;
+  justify-content: space-between;
   background-color: $white;
-  position: relative;
 }
 
 .page-header__logo {
-  position: absolute;
   width: 191px;
   height: 38px;
   margin-top: 11px;
   margin-bottom: 17px;
   margin-left: 20px;
   margin-right: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__logo {
+    height: 52px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo {
+    height: 59px;
+  }
 }

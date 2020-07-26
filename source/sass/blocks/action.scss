@@ -20,6 +20,28 @@
   margin-bottom: 42px;
 }
 
+@media (min-width: $mobile-width-only) {
+  .action__list {
+    display: flex;
+    justify-content: column;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .action__list {
+    display: flex;
+    justify-content: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .action__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .action__item {
   @include font-family-descr;
   font-size: 14px;

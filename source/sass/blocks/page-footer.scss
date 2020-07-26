@@ -7,6 +7,27 @@
   margin-bottom: 22px;
 }
 
+@media (min-width: $mobile-width-only) {
+  .page-footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .page-footer__logo {
   position: absolute;
   width: 128px;

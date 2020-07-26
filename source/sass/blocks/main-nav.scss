@@ -9,3 +9,19 @@
   color: $black;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    display: flex;
+    justify-content: space-around;
+    width: 440px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    display: flex;
+    justify-content: space-around;
+    width: 478px;
+  }
+}
