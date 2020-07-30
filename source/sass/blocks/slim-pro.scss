@@ -3,6 +3,25 @@
   margin: 20px;
 }
 
+@media (min-width: $tablet-width) {
+  .slim-pro {
+    background-color: $basic-grey;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slim-pro {
+    background-color: $basic-grey;
+    width: 570px;
+    margin-left: 110px;
+    margin-right: 110px;
+    margin-top: 22px;
+  }
+}
+
 .slim-pro__header {
   color: $black;
   font-size: 24px;
@@ -11,6 +30,19 @@
   margin-bottom: 29px;
   text-align: center;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .slim-pro__header {
+    color: $black;
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 77px;
+    margin-bottom: 24px;
+    margin-left: 53px;
+    text-align: left;
+    text-transform: uppercase;
+  }
 }
 
 .slim-pro__description {
@@ -22,6 +54,20 @@
   margin-bottom: 15px;
   padding-bottom: 23px;
   text-align: left;
+  border-bottom: solid 1px $light-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .slim-pro__description {
+    @include font-family-descr;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 53px;
+    margin-right: 33px;
+    margin-bottom: 48px;
+    text-align: left;
+    border-bottom: none;
+  }
 }
 
 .slim-pro__catalog {
@@ -33,4 +79,16 @@
   margin-left: 19px;
   margin-bottom: 22px;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .slim-pro__catalog {
+    @include alink;
+    font-size: 20px;
+    color: $black;
+    text-align: left;
+    margin-left: 53px;
+    margin-bottom: 57px;
+    text-transform: uppercase;
+  }
 }

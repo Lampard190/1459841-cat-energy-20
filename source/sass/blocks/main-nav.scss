@@ -11,10 +11,42 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main-nav__ahead,
+  .main-nav__catalog,
+  .main-nav__program {
+    @include alink;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400px;
+    text-transform: uppercase;
+    color: $black;
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__ahead,
+  .main-nav__catalog,
+  .main-nav__program {
+    @include alink;
+    font-size: 20px;
+    font-weight: 400px;
+    text-transform: uppercase;
+    color: $white;
+    text-align: center;
+  }
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
   .main-nav {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
-    width: 440px;
   }
 }
 
@@ -22,6 +54,8 @@
   .main-nav {
     display: flex;
     justify-content: space-around;
-    width: 478px;
+    /*background-image: url("../img/index-background-desktop@1x.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;*/
   }
 }

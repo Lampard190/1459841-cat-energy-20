@@ -1,5 +1,9 @@
 .owner-data {
   border: none;
+  padding: 0;
+  margin-top: 26px;
+  display: flex;
+  flex-direction: column;
 }
 
 .owner-data__title {
@@ -16,4 +20,32 @@
   line-height: 18px;
   text-transform: uppercase;
   text-align: left;
+}
+
+@media (min-width: $tablet-width) {
+  .owner-data {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .owner-data {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .owner-data__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .owner-data__wrapper-desktop {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-gap: 78px;
+  }
 }

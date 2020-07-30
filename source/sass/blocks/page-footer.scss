@@ -1,41 +1,35 @@
 .page-footer {
-  position: relative;
-  background-color: $white;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-content: center;
+  background-color: $basic-grey;
   margin-top: 29px;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 22px;
-}
-
-@media (min-width: $mobile-width-only) {
-  .page-footer {
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 @media (min-width: $tablet-width) {
   .page-footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 
 .page-footer__logo {
-  position: absolute;
   width: 128px;
   height: 24px;
+  margin-top: 39px;
+  margin-bottom: 32px;
 }
 
 .page-footer__academy {
   color: $special_dark-grey;
   font-size: 16px;
   text-align: left;
+  margin-bottom: 22px;
 }

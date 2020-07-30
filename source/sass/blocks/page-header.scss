@@ -1,26 +1,47 @@
 .page-header {
-  display: flex;
-  justify-content: space-between;
   background-color: $white;
-}
-
-.page-header__logo {
-  width: 191px;
-  height: 38px;
+  min-height: 66px;
   margin-top: 11px;
-  margin-bottom: 17px;
   margin-left: 20px;
   margin-right: 20px;
 }
 
 @media (min-width: $tablet-width) {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 29px;
+    margin-right: 29px;
+    margin-top: 42px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 110px;
+  }
+}
+
+.page-header__logo {
+  width: 191px;
+  height: 38px;
+  margin-left: 20px;
+}
+
+@media (min-width: $tablet-width) {
   .page-header__logo {
+    width: 174px;
     height: 52px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header__logo {
+    grid-column: 1;
+    grid-row: 1;
+    width: 202px;
     height: 59px;
   }
 }
