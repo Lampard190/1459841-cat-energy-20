@@ -6,7 +6,6 @@
   background-position: center 80%, center 0%;
   background-repeat: no-repeat;
   background-size: auto, contain;
-  margin-top: 27px;
   min-height: 480px;
 }
 
@@ -27,10 +26,20 @@
 
 @media (min-width: $desktop-width) {
   .prog {
+    position: absolute;
+    top: -550px;
+    left: 45px;
+    background-image: url("../img/index-can-mobile@1x.png");
+    background-position: right 9%;
+    background-repeat: no-repeat;
+    background-size: auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    max-width: 708px;
     min-height: 696px;
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 

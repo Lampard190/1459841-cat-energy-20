@@ -13,7 +13,7 @@
       <a class="page-header__logo" href="index.html" title="На главную страницу"><span class="visually-hidden">На главную страницу</span>
         <img src="img/logo-mobile.svg" width="191" height="38" alt="Логотип cat energy (кот и текст)">
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <a class="main-nav__ahead" href="index.html" title="На главную">Главная</a>
         <a class="main-nav__catalog" href="catalog.html" title="Каталог продукции">Каталог продукции</a>
         <a class="main-nav__program" href="form.html" title="Подбор программы">Подбор программы</a>
@@ -42,11 +42,11 @@
           </fieldset>
           <fieldset class="programs">
             <legend><span class="visually-hidden">Вид программы</span></legend>
-              <input type="radio" name="thin" id="cat-thin" value="Похудение" checked>
+              <input class="programs__input" type="radio" name="thin" id="cat-thin" value="Похудение" checked>
               <label class="programs__thin" for="cat-thin">Похудение</label>
-              <input type="radio" name="increase" id="cat-increase" value="Набор массы">
+              <input class="programs__input" type="radio" name="increase" id="cat-increase" value="Набор массы">
               <label class="programs__increase" for="cat-increase">Набор массы</label>
-              <input type="radio" name="not-known" id="cat-not-known" value="Не знаю">
+              <input class="programs__input" type="radio" name="not-known" id="cat-not-known" value="Не знаю">
               <label class="programs__not-known" for="cat-not-known">Не знаю (нужен ваш совет)</label>
           </fieldset>
         </div>

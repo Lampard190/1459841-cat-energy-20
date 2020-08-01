@@ -1,12 +1,11 @@
 .example {
   background-color: #eaeaea;
   margin-bottom: 28px;
-  margin-left: 20px;
-  margin-right: 20px;
 }
 
 @media (min-width: $tablet-width) {
   .example {
+    max-width: 708px;
     background-color: $white;
     margin-bottom: 28px;
     margin-left: 30px;
@@ -37,6 +36,8 @@
   text-align: left;
   margin-top: 27px;
   margin-bottom: 33px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -67,6 +68,8 @@
   line-height: 18px;
   text-align: left;
   margin-bottom: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -84,7 +87,7 @@
   .example__description {
     @include font-family-descr;
     grid-column: 1;
-    grid-row: 2;
+    grid-row: 1;
     font-size: 16px;
     line-height: 24px;
     text-align: left;

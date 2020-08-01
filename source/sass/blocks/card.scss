@@ -46,17 +46,19 @@
 
 @media (min-width: $tablet-width) {
   .card__list {
+    max-width: 708px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 60px;
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .card__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 80px;
+    margin: 0;
   }
 }
 
@@ -86,13 +88,6 @@
     padding-bottom: 14px;
     min-height: 511px;
     max-width: 245px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .card__list {
-    display: flex;
-    flex-wrap: wrap;
   }
 }
 

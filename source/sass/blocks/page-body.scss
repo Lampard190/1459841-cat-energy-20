@@ -9,3 +9,9 @@
   color: $special_dark-grey;
   background-color: $white;
 }
+
+@media (min-width: $desktop-width) {
+  .page-body {
+    position: relative;
+  }
+}

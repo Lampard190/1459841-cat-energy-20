@@ -2,8 +2,6 @@
   background-color: $white;
   min-height: 66px;
   margin-top: 11px;
-  margin-left: 20px;
-  margin-right: 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -21,6 +19,8 @@
     display: flex;
     justify-content: space-between;
     margin-left: 110px;
+    margin-top: 0;
+    margin-right: 0;
   }
 }
 
@@ -28,9 +28,17 @@
   width: 191px;
   height: 38px;
   margin-left: 20px;
+  margin-bottom: 24px;
 }
 
 @media (min-width: $tablet-width) {
+  .page-header__logo {
+    width: 174px;
+    height: 52px;
+  }
+}
+
+@media (min-width: $desktop-width) {
   .page-header__logo {
     width: 174px;
     height: 52px;
@@ -43,5 +51,6 @@
     grid-row: 1;
     width: 202px;
     height: 59px;
+    margin-top: 53px;
   }
 }

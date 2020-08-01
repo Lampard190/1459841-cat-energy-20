@@ -19,6 +19,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-left: 110px;
+    margin-right: 110px;
+    grid-gap: 60px;
   }
 }
 
@@ -65,7 +68,6 @@
   font-size: 36px;
   line-height: 36px;
   text-align: left;
-  margin: 0 auto;
   margin-bottom: 37px;
   margin-left: 20px;
   margin-right: 20px;
@@ -123,8 +125,6 @@
 
 .page-main__form {
   width: 280px;
-  margin-left: 20px;
-  margin-right: 20px;
   margin-bottom: 32px;
 }
 
@@ -160,6 +160,13 @@
   font-size: 16px;
   line-height: 20px;
   background-color: $basic-green;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.page-main__text {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 @media (min-width: $tablet-width) {
