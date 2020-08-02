@@ -1,5 +1,4 @@
 .page-body {
-  min-width: 320px;
   min-height: 100%;
   margin: 0 auto;
   padding: 0;
@@ -9,4 +8,10 @@
   font-weight: 400;
   color: $special_dark-grey;
   background-color: $white;
+}
+
+@media (min-width: $desktop-width) {
+  .page-body {
+    position: relative;
+  }
 }

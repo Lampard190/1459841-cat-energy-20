@@ -1,8 +1,8 @@
 .additionally {
   border: none;
+  padding: 0;
   margin-left: 20px;
   margin-right: 20px;
-  margin-top: 27px;
 }
 
 .additionally__header {
@@ -22,4 +22,26 @@
   font-size: 16px;
   line-height: 18px;
   text-align: left;
+}
+
+.additionally__checkbox {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .additionally__checkbox {
+    display: grid;
+    grid-template-columns: 355px 355px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additionally__checkbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-width: 1080px;
+  }
 }

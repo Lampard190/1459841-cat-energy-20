@@ -1,5 +1,10 @@
 .cat-data {
+  display: flex;
+  flex-direction: column;
   border: none;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 0;
 }
 
 .cat-data__name,

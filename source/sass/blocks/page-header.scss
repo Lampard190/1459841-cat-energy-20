@@ -1,14 +1,56 @@
 .page-header {
   background-color: $white;
-  position: relative;
+  min-height: 66px;
+  margin-top: 11px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 29px;
+    margin-right: 29px;
+    margin-top: 42px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 110px;
+    margin-top: 0;
+    margin-right: 0;
+  }
 }
 
 .page-header__logo {
-  position: absolute;
   width: 191px;
   height: 38px;
-  margin-top: 11px;
-  margin-bottom: 17px;
   margin-left: 20px;
-  margin-right: 20px;
+  margin-bottom: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__logo {
+    width: 174px;
+    height: 52px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo {
+    width: 174px;
+    height: 52px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo {
+    grid-column: 1;
+    grid-row: 1;
+    width: 202px;
+    height: 59px;
+    margin-top: 53px;
+  }
 }
