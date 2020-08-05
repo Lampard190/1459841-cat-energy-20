@@ -1,5 +1,6 @@
 .parameters {
   @include font-family-descr;
+  display: flex;
   font-size: 12px;
   line-height: 16px;
   grid-row: 2;
@@ -9,9 +10,55 @@
 @media (min-width: $tablet-width) {
   .parameters {
     @include font-family-descr;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 16px;
+    align-self: center;
+    justify-self: center;
     grid-row: 3;
     grid-column: 1/3;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .parameters {
+    @include font-family-descr;
+    font-size: 16px;
+    line-height: 16px;
+    align-self: center;
+    justify-self: center;
+    grid-row: 3;
+    grid-column: 1/3;
+  }
+}
+
+.parameters__first,
+.parameters__second,
+.parameters__third {
+  display: flex;
+  justify-content: space-between;
+  min-width: 142px;
+}
+
+@media (min-width: $tablet-width) {
+  .parameters__first,
+  .parameters__second,
+  .parameters__third {
+    display: flex;
+    justify-content: space-between;
+    min-width: 252px;
+    border-bottom: 1px solid $special_grey;
+    padding: 8px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .parameters__first,
+  .parameters__second,
+  .parameters__third {
+    display: flex;
+    justify-content: space-between;
+    min-width: 180px;
+    border-bottom: 1px solid $special_grey;
+    padding: 8px 0;
   }
 }

@@ -31,43 +31,47 @@
                 <label class="cat-data__name">Имя:<sup>*</sup></label>
                 <input class="cat-data__input cat-data__input--active" type="text" name="name" id="cat-name" placeholder="Барсик" required>
               </div>
-              <div class="cat-data__wrapper-two">
+              <div class="cat-data__wrapper">
                 <label class="cat-data__weight" for="cat-weight">Вес(кг):<sup>*</sup></label>
                 <input class="cat-data__input cat-data__input--active" type="number" name="weight" id="cat-weight" placeholder="7" required>
               </div>
-              <div class="cat-data__wrapper-three">
+              <div class="cat-data__wrapper">
                 <label class="cat-data__age" for="cat-age">Возраст(лет):</label>
                 <input  class="cat-data__input cat-data__input--active" type="number" name="age" id="cat-age" placeholder="7">
               </div>
           </fieldset>
           <fieldset class="programs">
             <legend><span class="visually-hidden">Вид программы</span></legend>
-              <input class="programs__input" type="radio" name="thin" id="cat-thin" value="Похудение" checked>
-              <label class="programs__thin" for="cat-thin">Похудение</label>
-              <input class="programs__input" type="radio" name="increase" id="cat-increase" value="Набор массы">
+              <div class="programs__wrapper programs__wrapper--one">
+                <input class="programs__input" type="radio" name="thin" id="cat-thin" value="Похудение" checked>
+                <label class="programs__thin" for="cat-thin"> Похудение</label>
+              </div>
+              <div class="programs__wrapper">
+                <input class="programs__input" type="radio" name="increase" id="cat-increase" value="Набор массы">
               <label class="programs__increase" for="cat-increase">Набор массы</label>
+            </div>
+            <div class="programs__wrapper">
               <input class="programs__input" type="radio" name="not-known" id="cat-not-known" value="Не знаю">
               <label class="programs__not-known" for="cat-not-known">Не знаю (нужен ваш совет)</label>
+            </div>
           </fieldset>
         </div>
         <fieldset class="owner-data">
           <legend class="owner-data__title">Контактные данные (владельца кота)</legend>
           <div class="owner-data__wrapper-desktop">
-            <div class="owner-data__wrapper">
+            <div class="owner-data__wrapper owner-data__wrapper--email">
               <label class="owner-data__email" for="owner-email">E-mail:<sup>*</sup></label>
               <input class="owner-data__input owner-data__input--active" type="email" name="email" id="owner-email" placeholder="kuklachev@gmail.com" required>
-              <button class="owner-data__button owner-data__button--active" type="button"><span class="visually-hidden">Иконка почты</span></button>
             </div>
-            <div class="owner-data__wrapper-two">
+            <div class="owner-data__wrapper owner-data__wrapper--phone">
               <label class="owner-data__phone" for="owner-phone">Телефон:<sup>*</sup></label>
               <input class="owner-data__input owner-data__input--active" type="tel" name="telephone" id="owner-phone" placeholder="8 (960) 900-60-90" required>
-              <button class="owner-data__button owner-data__button--active" type="button"><span class="visually-hidden">Иконка телефона</span></button>
             </div>
           </div>
           </fieldset>
           <section class="comments">
             <h2 class="comments__header">Комментарий</h2>
-            <p class="comments__text"><textarea name="comment" placeholder="Расскажите обо всех повадках кота"></textarea></p>
+            <textarea class="comments__area" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
           </section>
           <div class="page-main__additionally-wrapper">
             <fieldset class="additionally">
@@ -77,15 +81,15 @@
                     <input type="checkbox" name="sugar-sub" id="cat-sugar-sub" checked>
                     <label class="additionally__sugar-sub" for="cat-sugar-sub">Сахарозаменитель</label>
                   </div>
-                  <div class="additionally__wrapper-two">
+                  <div class="additionally__wrapper">
                     <input type="checkbox" name="water" id="cat-water">
                     <label class="additionally__water" for="cat-water">Питьевая вода</label>
                   </div>
-                  <div class="additionally__wrapper-three">
+                  <div class="additionally__wrapper">
                     <input type="checkbox" name="milk" id="cat-milk">
                     <label class="additionally__milk" for="cat-milk">Молоко</label>
                   </div>
-                  <div class="additionally__wrapper-four">
+                  <div class="additionally__wrapper">
                     <input type="checkbox" name="vitamins" id="cat-vitamins">
                     <label class="additionally__vitamins" for="cat-vitamins">Витамины</label>
                   </div>
@@ -110,7 +114,7 @@
       <a class="page-footer__logo" href="#"><span class="visually-hidden">cat energy</span>
         <img src="img/logo-footer.svg" width="128" height="24" alt="Логотип cat energy (текст)">
       </a>
-      <section class="social-buttons">
+      <section class="page-footer__social-buttons">
       <h2 class="visually-hidden">Ссылки на соцсети</h2>
         <a class="social-buttons__link social-buttons__link--vkontakte" href="#"><span class="visually-hidden">Вконтакте</span>
           <img src="img/icon-vk.svg" width="22" height="12" alt="Иконка Вконтакте">
@@ -123,7 +127,7 @@
         </a>
       </section>
       <p class="page-footer__academy">HTML Academy
-        <a href="https://htmlacademy.ru"><span class="visually-hidden">HTML Academy</span>
+        <a class="page-footer__academy-wrapper" href="https://htmlacademy.ru"><span class="visually-hidden">HTML Academy</span>
           <img src="img/htmlacademy.svg" width="27" height="32" alt="Логотип HTML Academy">
         </a>
       </p>

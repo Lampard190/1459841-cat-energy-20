@@ -22,7 +22,7 @@
 
 @media (min-width: $desktop-width) {
   .main-nav__ahead {
-    margin-left: 132px;
+    margin-left: 75px;
   }
 }
 
@@ -155,5 +155,6 @@
     background-size: auto;
     background-repeat: no-repeat;
     min-height: 696px;
+    min-width: 650px;
   }
 }
