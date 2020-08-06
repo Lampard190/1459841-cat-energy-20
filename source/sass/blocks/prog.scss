@@ -30,13 +30,14 @@
     top: -550px;
     left: 45px;
     background-image: url("../img/index-can-mobile@1x.png");
-    background-position: right 9%;
+    background-position: 104% 9%;
     background-repeat: no-repeat;
+    z-index: 3;
     background-size: auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    max-width: 708px;
+    max-width: 765px;
     min-height: 696px;
     margin-right: 0;
     margin-left: 0;
@@ -95,6 +96,8 @@
   width: 280px;
   margin-left: 20px;
   margin-right: 20px;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 
 @media (min-width: $tablet-width) {
@@ -108,5 +111,7 @@
     width: 244px;
     margin-left: 87px;
     margin-top: 49px;
+    padding-top: 14px;
+    padding-bottom: 14px;
   }
 }

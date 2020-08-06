@@ -74,8 +74,8 @@
 
 .action__item {
   @include font-family-descr;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: min-content 1fr;
   grid-gap: 20px;
   font-size: 14px;
   line-height: 18px;
@@ -85,8 +85,51 @@
 @media (min-width: $tablet-width) {
   .action__item {
     @include font-family-descr;
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    grid-gap: 31px;
     font-size: 16px;
     line-height: 24px;
     text-align: left;
+  }
+}
+
+.action__item-square {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  top: 10px;
+  background-color: $basic-green;
+  grid-column: 1;
+}
+
+@media (min-width: $tablet-width) {
+  .action__item-square {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    top: 10px;
+    background-color: $basic-green;
+    grid-column: 1;
+    grid-row: 1;
+  }
+}
+
+.action__item-image {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 5px;
+  left: 5px;
+}
+
+.action__description {
+  grid-column: 2;
+}
+
+@media (min-width: $tablet-width) {
+  .action__description {
+    grid-column: 1/3;
+    grid-row: 2;
   }
 }
