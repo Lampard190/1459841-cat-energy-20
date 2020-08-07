@@ -36,6 +36,7 @@
   color: $black;
   font-size: 24px;
   line-height: 24px;
+  font-weight: 400;
   margin-left: 0;
   margin-top: 28px;
   margin-bottom: 35px;
@@ -59,6 +60,7 @@
     color: $black;
     font-size: 36px;
     line-height: 36px;
+    font-weight: 400;
     margin-left: 47px;
     text-align: left;
     vertical-align: middle;
@@ -92,6 +94,7 @@
     color: $black;
     font-size: 36px;
     line-height: 36px;
+    font-weight: 400;
     margin-left: 0;
     text-align: left;
     vertical-align: middle;
@@ -236,6 +239,7 @@
 
 .other-goods__name {
   font-size: 16px;
+  font-weight: 400;
   text-transform: uppercase;
   text-align: left;
 }
@@ -245,6 +249,7 @@
     grid-column: 1;
     font-size: 20px;
     line-height: 20px;
+    font-weight: 400;
     text-transform: uppercase;
     text-align: left;
   }
