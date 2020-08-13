@@ -1,22 +1,16 @@
 .page-footer {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr min-content min-content;
   justify-content: center;
   background-color: $basic-grey;
-  margin-top: 29px;
 }
 
 @media (min-width: $tablet-width) {
   .page-footer {
     display: flex;
     justify-content: space-around;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-footer {
-    display: flex;
-    justify-content: space-around;
+    margin-top: -3px;
+    padding-bottom: 28px;
   }
 }
 
@@ -24,6 +18,8 @@
   width: 280px;
   height: 24px;
   text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
   padding-top: 39px;
   padding-bottom: 32px;
   border-bottom: 1px solid $light-grey;
@@ -34,9 +30,24 @@
     width: 128px;
     height: 24px;
     text-align: center;
-    padding-top: 39px;
+    padding-top: 59px;
+    padding-bottom: 32px;
+    margin-left: 0;
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__logo {
+    width: 128px;
+    height: 24px;
+    text-align: center;
+    padding-top: 59px;
     padding-bottom: 32px;
     border: none;
+    justify-self: center;
+    margin-left: -20px;
+    margin-right: 145px;
   }
 }
 
@@ -45,6 +56,12 @@
   justify-content: space-around;
   align-items: center;
   border-bottom: 1px solid $light-grey;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 50px;
+  padding-right: 60px;
 }
 
 @media (min-width: $tablet-width) {
@@ -54,10 +71,13 @@
     min-width: 129px;
     align-items: center;
     border: none;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 22px;
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .page-footer__social-buttons {
     display: flex;
     justify-content: space-between;
@@ -66,15 +86,19 @@
 }
 
 .page-footer__academy {
+  @include font-family-descr;
   color: $special_dark-grey;
   font-size: 16px;
   text-align: left;
-  padding-top: 28px;
-  padding-bottom: 22px;
+  margin-left: 20px;
+  padding-top: 12px;
+  padding-bottom: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .page-footer__academy-wrapper {
-  margin-left: 155px;
+  margin-left: 115px;
 }
 
 @media (min-width: $tablet-width) {
@@ -90,7 +114,21 @@
     color: $special_dark-grey;
     font-size: 16px;
     text-align: left;
-    padding-top: 28px;
-    padding-bottom: 22px;
+    padding-top: 59px;
+    padding-bottom: 0;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__academy {
+    display: flex;
+    justify-content: flex-end;
+    color: $special_dark-grey;
+    font-size: 16px;
+    text-align: left;
+    padding-top: 65px;
+    padding-bottom: 0;
+    padding-left: 50px;
   }
 }

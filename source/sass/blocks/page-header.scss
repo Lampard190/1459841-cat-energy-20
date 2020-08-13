@@ -8,9 +8,9 @@
   .page-header {
     display: flex;
     justify-content: space-between;
-    margin-left: 29px;
-    margin-right: 29px;
-    margin-top: 42px;
+    margin-left: 21px;
+    margin-right: 30px;
+    margin-top: 25px;
   }
 }
 
@@ -33,15 +33,37 @@
 
 @media (min-width: $tablet-width) {
   .page-header__logo {
+    width: 191px;
+    height: 38px;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}
+
+
+.page-header__logo-image {
+  width: 191px;
+  height: 38px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__logo {
+    width: 174px;
+    height: 52px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__logo-image {
     width: 174px;
     height: 52px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .page-header__logo {
-    width: 174px;
-    height: 52px;
+  .page-header__logo-image {
+    width: 202px;
+    height: 59px;
   }
 }
 
@@ -52,5 +74,30 @@
     width: 202px;
     height: 59px;
     margin-top: 53px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__wrapper {
+    min-width: 440px;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__wrapper {
+    min-width: 440px;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__wrapper--index {
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    min-height: 696px;
+    min-width: 720px;
+    margin-right: 0;
   }
 }
