@@ -15,9 +15,23 @@
     position: relative;
     border: none;
     padding: 0;
+    margin-left: 37px;
+    margin-right: 35px;
+    margin-top: 71px;
+    margin-bottom: 47px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .owner-data {
+    position: relative;
+    border: none;
+    padding: 0;
     margin: 0;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 0;
+    margin-right: 0;
     margin-top: 71px;
     display: flex;
     flex-direction: column;
@@ -56,9 +70,9 @@
       position: absolute;
       display: block;
       content: "";
-      top: 21px;
-      left: -60px;
-      width: 50px;
+      top: 22px;
+      left: -66px;
+      width: 29px;
       height: 2px;
       background-color: $basic-green;
     }
@@ -67,9 +81,43 @@
       position: absolute;
       display: block;
       content: "";
-      top: 21px;
-      left: 536px;
-      width: 172px;
+      top: 22px;
+      left: 556px;
+      width: 145px;
+      height: 2px;
+      background-color: $basic-green;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .owner-data__title {
+    padding: 0;
+    color: $black;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: left;
+    margin-bottom: 76px;
+    margin-top: 69px;
+    margin-left: 0;
+
+    &::before {
+      position: absolute;
+      display: block;
+      content: "";
+      top: 22px;
+      left: -110px;
+      width: 70px;
+      background-color: $basic-green;
+    }
+
+    &::after {
+      position: absolute;
+      display: block;
+      content: "";
+      top: 22px;
+      left: 551px;
+      width: 777px;
       height: 2px;
       background-color: $basic-green;
     }
@@ -108,7 +156,7 @@
   grid-template-columns: min-content 1fr;
   grid-gap: 9px;
   min-width: 280px;
-  margin-bottom: 13px;
+  margin-bottom: 11px;
   align-items: center;
   white-space: nowrap;
 }
@@ -120,6 +168,19 @@
     grid-template-columns: min-content 1fr;
     grid-gap: 20px;
     min-width: 632px;
+    margin-bottom: 17px;
+    align-items: center;
+    white-space: nowrap;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .owner-data__wrapper {
+    position: relative;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-gap: 20px;
+    min-width: 569px;
     align-items: center;
     white-space: nowrap;
   }
@@ -133,7 +194,7 @@
     background-repeat: no-repeat;
     width: 20px;
     height: 20px;
-    left: 230px;
+    left: 247px;
   }
 }
 
@@ -146,7 +207,21 @@
       background-repeat: no-repeat;
       width: 20px;
       height: 20px;
-      left: 580px;
+      left: 597px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .owner-data__wrapper--phone {
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../img/icon-phone.svg");
+      background-repeat: no-repeat;
+      width: 20px;
+      height: 20px;
+      left: 530px;
     }
   }
 }
@@ -157,10 +232,10 @@
     content: "";
     background-image: url("../img/icon-mail.svg");
     background-repeat: no-repeat;
-    background-position: 0 6px;
+    background-position: 0 2px;
     width: 20px;
     height: 20px;
-    left: 230px;
+    left: 244px;
   }
 }
 
@@ -174,22 +249,30 @@
       background-position: 0 2px;
       width: 20px;
       height: 20px;
-      left: 580px;
+      left: 597px;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .owner-data__wrapper {
-    display: flex;
-    justify-content: space-between;
+  .owner-data__wrapper--email {
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../img/icon-mail.svg");
+      background-repeat: no-repeat;
+      background-position: 0 2px;
+      width: 20px;
+      height: 20px;
+      left: 530px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .owner-data__wrapper-desktop {
     display: grid;
-    grid-template-columns: 500px 500px;
+    grid-template-columns: 569px 569px;
     grid-gap: 78px;
   }
 }
@@ -254,7 +337,10 @@
     border: 1px solid $grey-grey;
     border-radius: none;
     text-transform: uppercase;
-    font: inherit;
+    font-size: 20px;
+    line-height: auto;
+    color: $special_dark-grey;
+    font-family: inherit;
     padding-left: 21px;
 
     &::-webkit-outer-spin-button,
@@ -269,7 +355,10 @@
       border: 1px solid $special_grey;
       border-radius: none;
       text-transform: uppercase;
-      font: inherit;
+      font-size: 20px;
+      line-height: auto;
+      color: $special_dark-grey;
+      font-family: inherit;
       padding-left: 21px;
     }
 
@@ -280,7 +369,10 @@
       border: 1px solid $special_dark-grey;
       border-radius: none;
       text-transform: uppercase;
-      font: inherit;
+      font-size: 20px;
+      line-height: auto;
+      color: $special_dark-grey;
+      font-family: inherit;
       padding-left: 21px;
       outline: 0;
       outline-offset: 0;
@@ -292,8 +384,78 @@
       border: 1px solid $status_error;
       border-radius: none;
       text-transform: uppercase;
-      font: inherit;
+      font-size: 20px;
+      line-height: auto;
+      color: $special_dark-grey;
+      font-family: inherit;
       padding-left: 21px;
+      outline: 0;
+      outline-offset: 0;
+    }
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .owner-data__input {
+    min-height: 48px;
+    background-color: $white;
+    padding: 0;
+    border: 1px solid $grey-grey;
+    border-radius: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: auto;
+    color: $special_dark-grey;
+    font-family: inherit;
+    padding-left: 19px;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      appearance: none;
+      margin: 0;
+    }
+
+    &:hover {
+      padding: 0;
+      background-color: $white;
+      border: 1px solid $special_grey;
+      border-radius: none;
+      text-transform: uppercase;
+      font-size: 20px;
+      line-height: auto;
+      color: $special_dark-grey;
+      font-family: inherit;
+      padding-left: 19px;
+    }
+
+    &:active,
+    &:focus {
+      padding: 0;
+      background-color: $white;
+      border: 1px solid $special_dark-grey;
+      border-radius: none;
+      text-transform: uppercase;
+      font-size: 20px;
+      line-height: auto;
+      color: $special_dark-grey;
+      font-family: inherit;
+      padding-left: 19px;
+      outline: 0;
+      outline-offset: 0;
+    }
+
+    &:invalid {
+      padding: 0;
+      background-color: $white;
+      border: 1px solid $status_error;
+      border-radius: none;
+      text-transform: uppercase;
+      font-size: 20px;
+      line-height: auto;
+      color: $special_dark-grey;
+      font-family: inherit;
+      padding-left: 19px;
       outline: 0;
       outline-offset: 0;
     }

@@ -4,7 +4,7 @@
   border: none;
   padding: 0;
   margin: 0;
-  padding-bottom: 27px;
+  padding-bottom: 11px;
   border-bottom: 1px solid $light-grey;
 }
 
@@ -12,6 +12,17 @@
   .cat-data {
     display: flex;
     flex-direction: column;
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cat-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     border: none;
     padding: 0;
     margin: 0;
@@ -43,7 +54,7 @@
 .cat-data__wrapper {
   display: grid;
   grid-template-columns: min-content 1fr;
-  grid-gap: 14px;
+  grid-gap: 19px;
   min-width: 280px;
   margin-bottom: 13px;
   align-items: center;
@@ -55,12 +66,40 @@
   .cat-data__wrapper {
     display: grid;
     grid-template-columns: min-content 1fr;
-    grid-gap: 14px;
+    grid-gap: 22px;
     min-width: 630px;
-    margin-bottom: 13px;
+    margin-bottom: 27px;
     align-items: center;
-    margin-right: 30px;
+    margin-right: 37px;
     margin-left: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cat-data__wrapper {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-gap: 14px;
+    min-width: 569px;
+    min-height: 52px;
+    margin-bottom: 19px;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cat-data__wrapper--three {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-gap: 14px;
+    min-width: 569px;
+    min-height: 52px;
+    margin-bottom: 0;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -113,5 +152,137 @@
     padding-left: 14px;
     outline: 0;
     outline-offset: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .cat-data__input {
+    min-height: 44px;
+    background-color: $white;
+    padding: 0;
+    border: 1px solid $grey-grey;
+    border-radius: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: auto;
+    color: $special_dark-grey;
+    font-family: inherit;
+    padding-left: 20px;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      appearance: none;
+      margin: 0;
+    }
+
+    &:hover {
+      padding: 0;
+      background-color: $white;
+      border: 1px solid $special_grey;
+      border-radius: none;
+      text-transform: uppercase;
+      font-size: 20px;
+      line-height: auto;
+      color: $special_dark-grey;
+      font-family: inherit;
+      padding-left: 20px;
+    }
+
+    &:active,
+    &:focus {
+      padding: 0;
+      background-color: $white;
+      border: 1px solid $special_dark-grey;
+      border-radius: none;
+      text-transform: uppercase;
+      font-size: 20px;
+      line-height: auto;
+      color: $special_dark-grey;
+      font-family: inherit;
+      padding-left: 20px;
+      outline: 0;
+      outline-offset: 0;
+    }
+
+    &:invalid {
+      padding: 0;
+      background-color: $white;
+      border: 1px solid $status_error;
+      border-radius: none;
+      text-transform: uppercase;
+      font-size: 20px;
+      line-height: auto;
+      color: $special_dark-grey;
+      font-family: inherit;
+      padding-left: 20px;
+      outline: 0;
+      outline-offset: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cat-data__input {
+    min-height: 49px;
+    background-color: $white;
+    padding: 0;
+    border: 1px solid $grey-grey;
+    border-radius: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: auto;
+    color: $special_dark-grey;
+    font-family: inherit;
+    padding-left: 20px;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      appearance: none;
+      margin: 0;
+    }
+
+    &:hover {
+      padding: 0;
+      background-color: $white;
+      border: 1px solid $special_grey;
+      border-radius: none;
+      text-transform: uppercase;
+      font-size: 20px;
+      line-height: auto;
+      color: $special_dark-grey;
+      font-family: inherit;
+      padding-left: 20px;
+    }
+
+    &:active,
+    &:focus {
+      padding: 0;
+      background-color: $white;
+      border: 1px solid $special_dark-grey;
+      border-radius: none;
+      text-transform: uppercase;
+      font-size: 20px;
+      line-height: auto;
+      color: $special_dark-grey;
+      font-family: inherit;
+      padding-left: 20px;
+      outline: 0;
+      outline-offset: 0;
+    }
+
+    &:invalid {
+      padding: 0;
+      background-color: $white;
+      border: 1px solid $status_error;
+      border-radius: none;
+      text-transform: uppercase;
+      font-size: 20px;
+      line-height: auto;
+      color: $special_dark-grey;
+      font-family: inherit;
+      padding-left: 20px;
+      outline: 0;
+      outline-offset: 0;
+    }
   }
 }

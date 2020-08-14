@@ -11,18 +11,22 @@
   <body class="page-body">
     <header class="page-header">
       <a class="page-header__logo" href="index.html" title="На главную страницу"><span class="visually-hidden">На главную страницу</span>
-        <img src="img/logo-mobile.svg" width="191" height="38" alt="Логотип cat energy (кот и текст)">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип cat energy (кот и текст)">
+        </picture>
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <a class="main-nav__ahead" href="index.html" title="На главную">Главная</a>
         <a class="main-nav__catalog" href="catalog.html" title="Каталог продукции">Каталог продукции</a>
-        <a class="main-nav__program" href="form.html" title="Подбор программы">Подбор программы</a>
+        <a class="main-nav__program main-nav__program--active" href="form.html" title="Подбор программы">Подбор программы</a>
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Меню</span></button>
       </nav>
     </header>
     <main class="page-main">
       <h1 class="page-main__title">Подбор программы</h1>
-      <p class="page-main__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      <p class="page-main__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form class="page-main__form" action="https://echo.htmlacademy.ru" method="post">
         <div class="page-main__form-wrapper">
           <fieldset class="cat-data">
@@ -35,7 +39,7 @@
                 <label class="cat-data__weight" for="cat-weight">Вес(кг):<sup>*</sup></label>
                 <input class="cat-data__input cat-data__input--active" type="number" name="weight" id="cat-weight" placeholder="7" required>
               </div>
-              <div class="cat-data__wrapper">
+              <div class="cat-data__wrapper cat-data__wrapper--three">
                 <label class="cat-data__age" for="cat-age">Возраст(лет):</label>
                 <input  class="cat-data__input cat-data__input--active" type="number" name="age" id="cat-age" placeholder="7">
               </div>
@@ -102,12 +106,16 @@
           </div>
       </form>
       <section class="contacts">
-        <div class="contacts__wrapper">
-          <h2 class="contacts__header">Приглашаем к сотрудничеству дилеров!</h2>
+        <div class="contacts__wrapper contacts__wrapper--form contacts__wrapper--desk">
+          <h2 class="contacts__header">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
           <p class="contacts__address">ул. Большая Конюшенная, д. 19/8, Санкт-Петербург</p>
         </div>
-        <img src="img/bg-map-mobile@1x.png" width="320" height="362" alt="Карта ул. Большая Конюшенная, д. 19/8, Санкт-Петербург">
-        <img src="img/map-pin.png" width="57" height="53" alt="Точка нахождения офиса">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
+          <img class="contacts__map" src="img/bg-map-mobile@1x.png" alt="Карта ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+        </picture>
+        <img class="contacts__pin" src="img/map-pin.png" width="57" height="53" alt="Точка нахождения офиса">
       </section>
     </main>
     <footer class="page-footer">
@@ -116,13 +124,13 @@
       </a>
       <section class="page-footer__social-buttons">
       <h2 class="visually-hidden">Ссылки на соцсети</h2>
-        <a class="social-buttons__link social-buttons__link--vkontakte" href="#"><span class="visually-hidden">Вконтакте</span>
+        <a class="page-footer__social-buttons-link page-footer__social-buttons-link--vkontakte" href="#"><span class="visually-hidden">Вконтакте</span>
           <img src="img/icon-vk.svg" width="22" height="12" alt="Иконка Вконтакте">
         </a>
-        <a class="social-buttons__link social-buttons__link--instagram" href="#"><span class="visually-hidden">Инстаграм</span>
+        <a class="page-footer__social-buttons-link page-footer__social-buttons-link--instagram" href="#"><span class="visually-hidden">Инстаграм</span>
           <img src="img/icon-insta.svg" width="16" height="16" alt="Иконка Инстаграм">
         </a>
-        <a class="social-buttons__link social-buttons__link--facebook" href="#"><span class="visually-hidden">Фейсбук</span>
+        <a class="page-footer__social-buttons-link page-footer__social-buttons-link--facebook" href="#"><span class="visually-hidden">Фейсбук</span>
           <img src="img/icon-fb.svg" width="10" height="18" alt="Иконка Фейсбук">
         </a>
       </section>
