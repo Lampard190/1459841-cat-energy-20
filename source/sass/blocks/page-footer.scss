@@ -25,6 +25,19 @@
   border-bottom: 1px solid $light-grey;
 }
 
+.page-footer__logo-image {
+  width: 128px;
+  height: 24px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .page-footer__logo {
     width: 128px;

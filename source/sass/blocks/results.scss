@@ -131,33 +131,65 @@
 }
 
 @media (min-width: $tablet-width) {
-  .results__toggle {
+  .results__toggle-img {
     position: absolute;
     top: 14px;
     left: 269px;
-    width: 8px;
-    height: 8px;
-    padding: 0;
-    border: 13px solid $white;
-    box-shadow: (0 1px 3px rgba(0, 0, 0, 0.16));
-    background-color: $basic-green;
     border-radius: 50%;
+    box-shadow: (0 1px 3px rgba(0, 0, 0, 0.16));
     cursor: pointer;
+    stroke: $special_grey;
+
+    &:hover {
+      position: absolute;
+      top: 14px;
+      left: 269px;
+      border-radius: 50%;
+      box-shadow: (0 2px 4px rgba(0, 0, 0, 0.19));
+      cursor: pointer;
+      stroke: $special_grey;
+    }
+
+    &:active {
+      position: absolute;
+      top: 14px;
+      left: 269px;
+      border-radius: 50%;
+      box-shadow: (0 3px 5px rgba(0, 0, 0, 0.2));
+      cursor: pointer;
+      stroke: $basic-green;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .results__toggle {
+  .results__toggle-img {
     position: absolute;
     top: 14px;
     left: 269px;
-    width: 8px;
-    height: 8px;
-    padding: 0;
-    border: 13px solid $white;
-    box-shadow: (0 1px 3px rgba(0, 0, 0, 0.16));
-    background-color: $basic-green;
     border-radius: 50%;
+    box-shadow: (0 1px 3px rgba(0, 0, 0, 0.16));
     cursor: pointer;
+    stroke: $special_grey;
+
+    &:hover {
+      position: absolute;
+      top: 14px;
+      left: 269px;
+      border-radius: 50%;
+      box-shadow: (0 2px 4px rgba(0, 0, 0, 0.19));
+      cursor: pointer;
+      stroke: $special_grey;
+    }
+
+    &:active {
+      position: absolute;
+      top: 14px;
+      left: 269px;
+      border-radius: 50%;
+      box-shadow: (0 3px 5px rgba(0, 0, 0, 0.2));
+      cursor: pointer;
+      stroke: $basic-green;
+    }
   }
 }

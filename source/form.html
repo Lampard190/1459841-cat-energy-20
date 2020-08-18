@@ -9,12 +9,24 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page-body">
+    <svg style="display: none">
+      <symbol viewBox="0 0 40 40" id="checkbox">
+        <rect x="0.5" y="0.5" width="39" height="39" fill="#ffffff"/>
+        <path d="M18 24.718L12.3 18.2695L11.25 19.4574L18 27.0938L29.25 14.3665L28.2 13.0938L18 24.718Z" stroke="none"/>
+      </symbol>
+    </svg>
+    <svg style="display: none">
+      <symbol viewBox="0 0 41 40" id="radiobatton">
+        <path d="M40.4175 20C40.4175 30.7701 31.6977 39.5 20.9425 39.5C10.1874 39.5 1.46753 30.7701 1.46753 20C1.46753 9.22986 10.1874 0.5 20.9425 0.5C31.6977 0.5 40.4175 9.22986 40.4175 20Z" fill="#ffffff"/>
+        <ellipse cx="20.9425" cy="20" rx="8.98875" ry="9" stroke="none"/>
+      </symbol>
+    </svg>
     <header class="page-header">
       <a class="page-header__logo" href="index.html" title="На главную страницу"><span class="visually-hidden">На главную страницу</span>
         <picture>
           <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-          <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип cat energy (кот и текст)">
+          <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип cat energy (кот и текст)">
         </picture>
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -48,28 +60,43 @@
             <legend><span class="visually-hidden">Вид программы</span></legend>
               <div class="programs__wrapper programs__wrapper--one">
                 <input class="programs__input" type="radio" name="thin" id="cat-thin" value="Похудение" checked>
-                <label class="programs__thin" for="cat-thin"> Похудение</label>
+                <label class="programs__thin" for="cat-thin">
+                  <svg class="programs__radio" width="30" height="30">
+                    <use xlink:href="#radiobatton"></use>
+                  </svg>
+                  Похудение
+                </label>
               </div>
               <div class="programs__wrapper">
                 <input class="programs__input" type="radio" name="increase" id="cat-increase" value="Набор массы">
-              <label class="programs__increase" for="cat-increase">Набор массы</label>
-            </div>
-            <div class="programs__wrapper">
-              <input class="programs__input" type="radio" name="not-known" id="cat-not-known" value="Не знаю">
-              <label class="programs__not-known" for="cat-not-known">Не знаю (нужен ваш совет)</label>
-            </div>
-          </fieldset>
+                <label class="programs__increase" for="cat-increase">
+                  <svg class="programs__radio" width="30" height="30">
+                    <use xlink:href="#radiobatton"></use>
+                  </svg>
+                  Набор массы
+                </label>
+              </div>
+              <div class="programs__wrapper">
+                <input class="programs__input" type="radio" name="not-known" id="cat-not-known" value="Не знаю">
+                <label class="programs__not-known" for="cat-not-known">
+                  <svg class="programs__radio" width="30" height="30">
+                    <use xlink:href="#radiobatton"></use>
+                  </svg>
+                  Не знаю (нужен ваш совет)
+                </label>
+              </div>
+            </fieldset>
         </div>
         <fieldset class="owner-data">
           <legend class="owner-data__title">Контактные данные (владельца кота)</legend>
           <div class="owner-data__wrapper-desktop">
             <div class="owner-data__wrapper owner-data__wrapper--email">
               <label class="owner-data__email" for="owner-email">E-mail:<sup>*</sup></label>
-              <input class="owner-data__input owner-data__input--active" type="email" name="email" id="owner-email" placeholder="kuklachev@gmail.com" required>
+              <input class="owner-data__input owner-data__input--active owner-data__input--mail" type="email" name="email" id="owner-email" placeholder="kuklachev@gmail.com" required>
             </div>
             <div class="owner-data__wrapper owner-data__wrapper--phone">
               <label class="owner-data__phone" for="owner-phone">Телефон:<sup>*</sup></label>
-              <input class="owner-data__input owner-data__input--active" type="tel" name="telephone" id="owner-phone" placeholder="8 (960) 900-60-90" required>
+              <input class="owner-data__input owner-data__input--active owner-data__input--phone" type="tel" name="telephone" id="owner-phone" placeholder="8 (960) 900-60-90" required>
             </div>
           </div>
           </fieldset>
@@ -82,20 +109,40 @@
               <legend class="additionally__header">Дополнительно</legend>
                 <div class="additionally__checkbox">
                   <div class="additionally__wrapper">
-                    <input type="checkbox" name="sugar-sub" id="cat-sugar-sub" checked>
-                    <label class="additionally__sugar-sub" for="cat-sugar-sub">Сахарозаменитель</label>
+                    <input class="additionally__input" type="checkbox" name="sugar-sub" id="cat-sugar-sub" checked>
+                    <label class="additionally__sugar-sub" for="cat-sugar-sub">
+                      <svg class="additionally__check" width="30" height="30">
+                        <use xlink:href="#checkbox"></use>
+                      </svg>
+                      Сахарозаменитель
+                    </label>
                   </div>
                   <div class="additionally__wrapper">
-                    <input type="checkbox" name="water" id="cat-water">
-                    <label class="additionally__water" for="cat-water">Питьевая вода</label>
+                    <input class="additionally__input" type="checkbox" name="water" id="cat-water">
+                    <label class="additionally__water" for="cat-water">
+                      <svg class="additionally__check" width="30" height="30">
+                        <use xlink:href="#checkbox"></use>
+                      </svg>
+                      Питьевая вода
+                    </label>
                   </div>
                   <div class="additionally__wrapper">
-                    <input type="checkbox" name="milk" id="cat-milk">
-                    <label class="additionally__milk" for="cat-milk">Молоко</label>
+                    <input class="additionally__input" type="checkbox" name="milk" id="cat-milk">
+                    <label class="additionally__milk" for="cat-milk">
+                      <svg class="additionally__check" width="30" height="30">
+                        <use xlink:href="#checkbox"></use>
+                      </svg>
+                      Молоко
+                    </label>
                   </div>
                   <div class="additionally__wrapper">
-                    <input type="checkbox" name="vitamins" id="cat-vitamins">
-                    <label class="additionally__vitamins" for="cat-vitamins">Витамины</label>
+                    <input class="additionally__input" type="checkbox" name="vitamins" id="cat-vitamins">
+                    <label class="additionally__vitamins" for="cat-vitamins">
+                      <svg class="additionally__check" width="30" height="30">
+                        <use xlink:href="#checkbox"></use>
+                      </svg>
+                      Витамины
+                    </label>
                   </div>
                 </div>
             </fieldset>
@@ -111,16 +158,16 @@
           <p class="contacts__address">ул. Большая Конюшенная, д. 19/8, Санкт-Петербург</p>
         </div>
         <picture>
-          <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png">
-          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
-          <img class="contacts__map" src="img/bg-map-mobile@1x.png" alt="Карта ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+          <img class="contacts__map" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Карта ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
         </picture>
         <img class="contacts__pin" src="img/map-pin.png" width="57" height="53" alt="Точка нахождения офиса">
       </section>
     </main>
     <footer class="page-footer">
       <a class="page-footer__logo" href="#"><span class="visually-hidden">cat energy</span>
-        <img src="img/logo-footer.svg" width="128" height="24" alt="Логотип cat energy (текст)">
+        <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Логотип cat energy (текст)">
       </a>
       <section class="page-footer__social-buttons">
       <h2 class="visually-hidden">Ссылки на соцсети</h2>

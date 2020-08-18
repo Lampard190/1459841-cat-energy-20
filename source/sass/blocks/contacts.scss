@@ -130,11 +130,20 @@
 
 .contacts__map {
   height: 362px;
+  min-width: 320px;
 }
 
 @media (min-width: $tablet-width) {
   .contacts__map {
     height: 400px;
+    min-width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__map {
+    height: 400px;
+    min-width: 1440px;
   }
 }
 

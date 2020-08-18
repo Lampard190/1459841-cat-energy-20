@@ -37,7 +37,7 @@
   font-size: 24px;
   line-height: 26px;
   text-align: left;
-  margin-bottom: 39px;
+  margin-bottom: 29px;
 
   &::after {
     position: absolute;
@@ -125,7 +125,6 @@
   font-size: 16px;
   line-height: 18px;
   text-align: left;
-  margin-left: 21px;
 }
 
 @media (min-width: $tablet-width) {
@@ -138,7 +137,7 @@
     font-size: 20px;
     line-height: auto;
     text-align: left;
-    margin-left: 46px;
+    margin-left: 12px;
   }
 }
 
@@ -152,8 +151,12 @@
     font-size: 20px;
     line-height: auto;
     text-align: left;
-    margin-left: 30px;
+    margin-left: 0;
   }
+}
+
+.additionally__input {
+  display: none;
 }
 
 .additionally__checkbox {
@@ -172,10 +175,6 @@
 
 @media (min-width: $desktop-width) {
   .additionally__checkbox {
-    /*display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;*/
     min-width: 1180px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -184,20 +183,143 @@
 }
 
 .additionally__wrapper {
-  margin-bottom: 13px;
+  margin-bottom: 9px;
 }
 
 @media (min-width: $tablet-width) {
   .additionally__wrapper {
     margin-bottom: 0;
-    margin-top: 9px;
+    margin-top: -25px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .additionally__wrapper {
     margin-bottom: 0;
-    margin-top: 9px;
+    margin-top: -19px;
     min-width: 230px;
+  }
+}
+
+.additionally__input + .additionally__sugar-sub {
+  fill: none;
+  stroke: $special_grey;
+  cursor: pointer;
+
+  &:hover {
+    stroke: $basic-light-grey;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.additionally__input + .additionally__milk {
+  fill: none;
+  stroke: $special_grey;
+  cursor: pointer;
+
+  &:hover {
+    stroke: $basic-light-grey;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.additionally__input + .additionally__water {
+  fill: none;
+  stroke: $special_grey;
+  cursor: pointer;
+
+  &:hover {
+    stroke: $basic-light-grey;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.additionally__input + .additionally__vitamins {
+  fill: none;
+  stroke: $special_grey;
+  cursor: pointer;
+
+  &:hover {
+    stroke: $basic-light-grey;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.additionally__input:checked + .additionally__sugar-sub {
+  stroke: $special_grey;
+  fill: $basic-green;
+
+  &:hover {
+    stroke: $basic-light-grey;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.additionally__input:checked + .additionally__milk {
+  stroke: $special_grey;
+  fill: $basic-green;
+
+  &:hover {
+    stroke: $basic-light-grey;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.additionally__input:checked + .additionally__water {
+  stroke: $special_grey;
+  fill: $basic-green;
+
+  &:hover {
+    stroke: $basic-light-grey;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.additionally__input:checked + .additionally__vitamins {
+  stroke: $special_grey;
+  fill: $basic-green;
+
+  &:hover {
+    stroke: $basic-light-grey;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.additionally__check {
+  margin-top: 0;
+  margin-right: 12px;
+}
+
+@media (min-width: $tablet-width) {
+  .additionally__check {
+    vertical-align: baseline;
+    width: 40px;
+    height: 40px;
+    margin-top: 12px;
+    margin-right: 9px;
   }
 }

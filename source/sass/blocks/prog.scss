@@ -7,6 +7,11 @@
   background-repeat: no-repeat;
   background-size: auto, contain;
   min-height: 480px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index-can-mobile@2x.png"), url("../img/index-background-mobile@2x.jpg");
+    background-size: 280px auto, contain;
+  }
 }
 
 @media (min-width: $tablet-width) {

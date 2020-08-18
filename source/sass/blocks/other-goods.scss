@@ -355,6 +355,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 289px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -366,6 +370,10 @@
     background-size: contain;
     grid-template-columns: 1fr 1fr;
     margin-top: 67px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+    }
   }
 }
 
@@ -381,6 +389,10 @@
     justify-self: end;
     margin-top: 0;
     min-width: 245px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+    }
   }
 }
 

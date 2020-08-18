@@ -68,7 +68,7 @@
     grid-template-columns: min-content 1fr;
     grid-gap: 22px;
     min-width: 630px;
-    margin-bottom: 27px;
+    margin-bottom: 19px;
     align-items: center;
     margin-right: 37px;
     margin-left: 40px;
@@ -157,7 +157,7 @@
 
 @media (min-width: $tablet-width) {
   .cat-data__input {
-    min-height: 44px;
+    min-height: 50px;
     background-color: $white;
     padding: 0;
     border: 1px solid $grey-grey;

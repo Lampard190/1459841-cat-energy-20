@@ -2,7 +2,7 @@
 .main-nav__catalog,
 .main-nav__program {
   @include alink;
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
@@ -48,10 +48,6 @@
   }
 }
 
-.main-nav__program {
-  border-bottom: none;
-}
-
 @media (min-width: $tablet-width) {
   .main-nav__program {
     padding-left: 20px;
@@ -77,7 +73,7 @@
     @include alink;
     font-size: 18px;
     line-height: 24px;
-    font-weight: 400px;
+    font-weight: 400;
     text-transform: uppercase;
     text-align: center;
     border: none;
@@ -87,25 +83,25 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-header__wrapper--index .main-nav__ahead,
-  .page-header--index .main-nav__catalog,
-  .page-header--index .main-nav__program {
-    @include alink;
-    font-size: 20px;
-    font-weight: 400px;
-    text-transform: uppercase;
-    text-align: center;
-    color: $white;
-  }
-}
-
-@media (min-width: $desktop-width) {
   .page-header__wrapper .main-nav__ahead,
   .page-header__wrapper .main-nav__catalog,
   .page-header__wrapper .main-nav__program {
     @include alink;
     font-size: 20px;
-    font-weight: 400px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    color: $black;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__wrapper--index .main-nav__ahead,
+  .page-header__wrapper--index .main-nav__catalog,
+  .page-header__wrapper--index .main-nav__program {
+    @include alink;
+    font-size: 20px;
+    font-weight: 400;
     text-transform: uppercase;
     text-align: center;
     color: $white;
