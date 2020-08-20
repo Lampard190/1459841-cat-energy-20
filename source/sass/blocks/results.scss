@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   justify-content: space-around;
-  margin-left: 30px;
+  margin-left: 34px;
   margin-right: 30px;
   padding-bottom: 19px;
   margin-top: 14px;
@@ -78,7 +78,7 @@
 .results__scale {
   position: absolute;
   top: 17px;
-  left: 88px;
+  left: 84px;
   height: 14px;
   min-width: 84px;
   background-color: $white;
@@ -160,6 +160,10 @@
       stroke: $basic-green;
     }
   }
+}
+
+.results__toggle-img {
+  display: none;
 }
 
 @media (min-width: $desktop-width) {

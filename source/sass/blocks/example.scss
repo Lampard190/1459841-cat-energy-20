@@ -5,6 +5,7 @@
 @media (min-width: $tablet-width) {
   .example {
     background-color: $white;
+    border-top: 1px solid $grey;
   }
 }
 
@@ -12,6 +13,7 @@
   .example {
     background-color: $white;
     min-height: 462px;
+    border-top: none;
   }
 }
 
@@ -41,7 +43,7 @@
     line-height: 60px;
     font-weight: 400;
     text-align: left;
-    padding-top: 18px;
+    margin-top: 10px;
     margin-bottom: 49px;
     margin-left: 30px;
     margin-right: 30px;
