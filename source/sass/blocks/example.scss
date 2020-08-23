@@ -99,6 +99,7 @@
     margin-bottom: 69px;
     margin-left: 110px;
     max-width: 436px;
+    margin-right: 15px;
   }
 }
 
@@ -150,7 +151,7 @@
 @media (min-width: $desktop-width) {
   .example__wrapper {
     display: grid;
-    grid-template-columns: 1fr;
+    /*grid-template-columns: 1fr;*/
     grid-template-rows: min-content 1fr 1fr;
     background-color: $special-light-grey;
     padding-bottom: 34px;

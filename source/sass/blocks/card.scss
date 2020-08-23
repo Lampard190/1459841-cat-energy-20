@@ -136,7 +136,7 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .card__item-link--big {
     @include alink;
     order: -1;
@@ -176,7 +176,7 @@
     font-weight: 400;
     line-height: 21px;
     margin: 0 44px;
-    margin-bottom: 0;
+    margin-bottom: -4px;
     text-align: center;
   }
 }

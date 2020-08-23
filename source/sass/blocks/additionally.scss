@@ -57,7 +57,7 @@
     font-size: 36px;
     line-height: 36px;
     text-align: left;
-    margin-bottom: 57px;
+    margin-bottom: 69px;
     margin-left: 10px;
 
     &::before {
@@ -90,7 +90,7 @@
     font-size: 36px;
     line-height: 36px;
     text-align: left;
-    margin-bottom: 57px;
+    margin-bottom: 60px;
     margin-left: 0;
 
     &::before {
@@ -137,7 +137,6 @@
     font-size: 20px;
     line-height: auto;
     text-align: left;
-    margin-left: 12px;
   }
 }
 
@@ -169,7 +168,9 @@
 @media (min-width: $tablet-width) {
   .additionally__checkbox {
     display: grid;
-    grid-template-columns: 350px 355px;
+    grid-template-columns: 342px 350px;
+    margin-left: 12px;
+    min-height: 147px;
   }
 }
 
@@ -177,8 +178,10 @@
   .additionally__checkbox {
     min-width: 1180px;
     display: grid;
+    margin-left: 0;
+    margin-bottom: 8px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 98px;
+    grid-gap: 96px;
   }
 }
 
@@ -310,16 +313,17 @@
 }
 
 .additionally__check {
-  margin-top: 0;
+  margin-top: 3px;
   margin-right: 12px;
+  vertical-align: text-bottom;
 }
 
 @media (min-width: $tablet-width) {
   .additionally__check {
-    vertical-align: baseline;
+    vertical-align: text-bottom;
     width: 40px;
     height: 40px;
     margin-top: 12px;
-    margin-right: 9px;
+    margin-right: 13px;
   }
 }

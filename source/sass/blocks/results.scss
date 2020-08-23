@@ -130,8 +130,13 @@
   }
 }
 
+.results__toggle-img {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .results__toggle-img {
+    display: block;
     position: absolute;
     top: 14px;
     left: 269px;
@@ -162,12 +167,9 @@
   }
 }
 
-.results__toggle-img {
-  display: none;
-}
-
 @media (min-width: $desktop-width) {
   .results__toggle-img {
+    display: block;
     position: absolute;
     top: 14px;
     left: 269px;
