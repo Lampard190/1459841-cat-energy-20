@@ -111,6 +111,15 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-nav__ahead,
+  .main-nav__catalog,
+  .main-nav__program {
+    @include alink;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
   .page-header__wrapper .main-nav__ahead,
   .page-header__wrapper .main-nav__catalog,
   .page-header__wrapper .main-nav__program {

@@ -196,7 +196,7 @@
     background-color: $basic-green;
     margin-right: 30px;
     margin-left: 41px;
-    margin-top: 9px;
+    margin-top: 22px;
     outline: 0;
     outline-offset: 0;
     border: none;
@@ -220,7 +220,7 @@
     border: none;
     width: 569px;
     font-family: inherit;
-    padding: 13px 0;
+    padding: 26px 0;
   }
 }
 
@@ -239,7 +239,7 @@
     line-height: 16px;
     margin-left: 0;
     margin-right: 114px;
-    margin-top: 21px;
+    margin-top: 36px;
     color: $black;
     text-align: center;
   }
@@ -252,7 +252,7 @@
     line-height: 16px;
     margin-left: 0;
     margin-right: 178px;
-    margin-top: 21px;
+    margin-top: 34px;
     color: $black;
     text-align: center;
   }
@@ -262,7 +262,7 @@
   .page-main__additionally-wrapper {
     display: flex;
     flex-direction: column;
-    margin-bottom: 74px;
+    margin-bottom: 71px;
   }
 }
 
@@ -270,7 +270,8 @@
   .page-main__additionally-wrapper {
     display: flex;
     flex-direction: column;
-    margin-bottom: 85px;
+    margin-bottom: 82px;
+    min-width: 1220px;
   }
 }
 
@@ -278,6 +279,7 @@
   .page-main__send-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-top: 14px;
   }
 }
 
