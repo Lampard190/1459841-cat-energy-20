@@ -7,10 +7,11 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     margin-top: -3px;
-    padding-bottom: 28px;
+    padding-bottom: 27px;
   }
 }
 
@@ -25,6 +26,19 @@
   border-bottom: 1px solid $light-grey;
 }
 
+.page-footer__logo-image {
+  width: 128px;
+  height: 24px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .page-footer__logo {
     width: 128px;
@@ -32,7 +46,8 @@
     text-align: center;
     padding-top: 59px;
     padding-bottom: 32px;
-    margin-left: 0;
+    margin-left: 30px;
+    margin-right: 0;
     border: none;
   }
 }
@@ -45,9 +60,8 @@
     padding-top: 59px;
     padding-bottom: 32px;
     border: none;
-    justify-self: center;
-    margin-left: -20px;
-    margin-right: 145px;
+    justify-self: start;
+    margin-left: 110px;
   }
 }
 
@@ -55,12 +69,13 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  list-style: none;
   border-bottom: 1px solid $light-grey;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  padding-bottom: 13px;
+  padding-top: 9px;
   margin-left: 20px;
   margin-right: 20px;
-  padding-left: 50px;
+  padding-left: 56px;
   padding-right: 60px;
 }
 
@@ -71,64 +86,258 @@
     min-width: 129px;
     align-items: center;
     border: none;
-    padding-left: 0;
-    padding-right: 0;
-    margin-top: 22px;
+    margin-top: 49px;
+    margin-left: 0;
+    margin-right: 9px;
+    padding-bottom: 16px;
+    padding-right: 61px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer__social-buttons {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    margin-left: 116px;
+    margin-right: 120px;
+    padding-bottom: 10px;
+  }
+}
+
+.page-footer__social-buttons-link-vk {
+  width: 23px;
+  height: 16px;
+  fill: $special_grey-3;
+  margin-right: 7px;
+
+  &:hover {
+    fill: $basic-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__social-buttons-link-vk {
+    width: 30px;
+    height: 22px;
+    fill: $special_grey-3;
+    margin-right: 23px;
+
+    &:hover {
+      fill: $basic-green;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__social-buttons-link-vk {
+    margin-right: 27px;
+  }
+}
+
+.page-footer__social-buttons-link-insta {
+  width: 22px;
+  height: 22px;
+  fill: $special_grey-3;
+
+  &:hover {
+    fill: $basic-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__social-buttons-link-insta {
+    width: 30px;
+    height: 30px;
+    fill: $special_grey-3;
+    margin-right: 10px;
+
+    &:hover {
+      fill: $basic-green;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__social-buttons-link-insta {
+    margin-right: 15px;
+  }
+}
+
+.page-footer__social-buttons-link-fb {
+  width: 22px;
+  height: 22px;
+  stroke: $special_grey-3;
+  stroke-width: 1.5px;
+  fill: $white;
+
+  &:hover {
+    fill: $basic-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__social-buttons-link-fb {
+    width: 26px;
+    height: 29px;
+    stroke: $special_grey-3;
+    fill: $white;
+
+    &:hover {
+      fill: $basic-green;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__social-buttons-link-fb {
+    width: 28px;
+    height: 33px;
   }
 }
 
 .page-footer__academy {
-  @include font-family-descr;
-  color: $special_dark-grey;
-  font-size: 16px;
-  text-align: left;
-  margin-left: 20px;
-  padding-top: 12px;
-  padding-bottom: 30px;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.page-footer__academy-wrapper {
-  margin-left: 115px;
-}
-
-@media (min-width: $tablet-width) {
-  .page-footer__academy-wrapper {
-    margin-left: 30px;
-  }
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  padding-top: 5px;
 }
 
 @media (min-width: $tablet-width) {
   .page-footer__academy {
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    justify-self: start;
+    padding-top: 20px;
+    margin-left: 41px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__academy {
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    justify-self: start;
+    padding-top: 20px;
+    margin-left: 136px;
+  }
+}
+
+.page-footer__academy-text {
+  @include font-family-descr;
+  color: $special_dark-grey;
+  font-size: 16px;
+  text-align: left;
+  padding-top: 12px;
+  padding-bottom: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__academy-text {
     display: flex;
     justify-content: flex-end;
     color: $special_dark-grey;
     font-size: 16px;
     text-align: left;
-    padding-top: 59px;
+    padding-top: 44px;
     padding-bottom: 0;
     padding-left: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .page-footer__academy {
+  .page-footer__academy-text {
     display: flex;
     justify-content: flex-end;
     color: $special_dark-grey;
     font-size: 16px;
     text-align: left;
-    padding-top: 65px;
+    padding-top: 45px;
     padding-bottom: 0;
     padding-left: 50px;
+  }
+}
+
+.page-footer__academy-logo {
+  width: 39px;
+  height: 48px;
+  fill: $special_grey-3;
+  margin-right: 15px;
+
+  &:hover {
+    fill: $basic-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__academy-logo {
+    width: 43px;
+    height: 60px;
+    fill: $special_grey-3;
+    padding-top: 22px;
+    margin-left: 16px;
+
+    &:hover {
+      fill: $basic-green;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__academy-logo {
+    width: 43px;
+    height: 60px;
+    padding-top: 25px;
+    margin-left: 16px;
+    fill: $special_grey-3;
+
+    &:hover {
+      fill: $basic-green;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__academy-wrapper {
+    display: flex;
+    justify-content: space-between;
   }
 }

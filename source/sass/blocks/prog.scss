@@ -5,8 +5,13 @@
   background-image: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg");
   background-position: center 80%, center 0%;
   background-repeat: no-repeat;
-  background-size: auto, contain;
+  background-size: 280px auto, auto 304px;
   min-height: 480px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index-can-mobile@2x.png"), url("../img/index-background-mobile@2x.jpg");
+    background-size: 280px auto, auto 304px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -22,6 +27,7 @@
     margin-right: 30px;
     min-height: 810px;
     margin-bottom: 9px;
+    background-color: $white;
   }
 }
 
@@ -38,6 +44,7 @@
     min-height: 696px;
     margin-right: 0;
     margin-left: 0;
+    background-color: $white;
   }
 }
 
@@ -121,8 +128,7 @@
   text-align: center;
   text-transform: uppercase;
   width: 280px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 0 auto;
   padding-top: 11px;
   padding-bottom: 11px;
 

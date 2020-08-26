@@ -17,7 +17,7 @@
     padding: 0;
     margin-left: 37px;
     margin-right: 35px;
-    margin-top: 71px;
+    margin-top: 74px;
     margin-bottom: 47px;
     display: flex;
     flex-direction: column;
@@ -186,89 +186,6 @@
   }
 }
 
-.owner-data__wrapper--phone {
-  &::before {
-    position: absolute;
-    content: "";
-    background-image: url("../img/icon-phone.svg");
-    background-repeat: no-repeat;
-    width: 20px;
-    height: 20px;
-    left: 247px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .owner-data__wrapper--phone {
-    &::before {
-      position: absolute;
-      content: "";
-      background-image: url("../img/icon-phone.svg");
-      background-repeat: no-repeat;
-      width: 20px;
-      height: 20px;
-      left: 597px;
-    }
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .owner-data__wrapper--phone {
-    &::before {
-      position: absolute;
-      content: "";
-      background-image: url("../img/icon-phone.svg");
-      background-repeat: no-repeat;
-      width: 20px;
-      height: 20px;
-      left: 530px;
-    }
-  }
-}
-
-.owner-data__wrapper--email {
-  &::before {
-    position: absolute;
-    content: "";
-    background-image: url("../img/icon-mail.svg");
-    background-repeat: no-repeat;
-    background-position: 0 2px;
-    width: 20px;
-    height: 20px;
-    left: 244px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .owner-data__wrapper--email {
-    &::before {
-      position: absolute;
-      content: "";
-      background-image: url("../img/icon-mail.svg");
-      background-repeat: no-repeat;
-      background-position: 0 2px;
-      width: 20px;
-      height: 20px;
-      left: 597px;
-    }
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .owner-data__wrapper--email {
-    &::before {
-      position: absolute;
-      content: "";
-      background-image: url("../img/icon-mail.svg");
-      background-repeat: no-repeat;
-      background-position: 0 2px;
-      width: 20px;
-      height: 20px;
-      left: 530px;
-    }
-  }
-}
-
 @media (min-width: $desktop-width) {
   .owner-data__wrapper-desktop {
     display: grid;
@@ -277,15 +194,21 @@
   }
 }
 
-.owner-data__input {
+.owner-data__input--mail {
   min-height: 45px;
   background-color: $white;
   padding: 0;
   border: 1px solid $grey-grey;
   border-radius: none;
   text-transform: uppercase;
-  font: inherit;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 18px;
   padding-left: 14px;
+  background-image: url("../img/icon-mail.svg");
+  background-repeat: no-repeat;
+  background-position: 186px 13px;
+  background-size: 20px 20px;
 
   &::-webkit-outer-spin-button,
   &::-webkit-inner-spin-button {
@@ -299,8 +222,14 @@
     border: 1px solid $special_grey;
     border-radius: none;
     text-transform: uppercase;
-    font: inherit;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 18px;
     padding-left: 14px;
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-position: 186px 13px;
+    background-size: 20px 20px;
   }
 
   &:active,
@@ -310,10 +239,16 @@
     border: 1px solid $special_dark-grey;
     border-radius: none;
     text-transform: uppercase;
-    font: inherit;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 18px;
     padding-left: 14px;
     outline: 0;
     outline-offset: 0;
+    background-image: url("../img/icon-mail-active.svg");
+    background-repeat: no-repeat;
+    background-position: 186px 13px;
+    background-size: 20px 20px;
   }
 
   &:invalid {
@@ -322,15 +257,97 @@
     border: 1px solid $status_error;
     border-radius: none;
     text-transform: uppercase;
-    font: inherit;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 18px;
     padding-left: 14px;
     outline: 0;
     outline-offset: 0;
+    background-image: url("../img/icon-mail-err.svg");
+    background-repeat: no-repeat;
+    background-position: 186px 13px;
+    background-size: 20px 20px;
+  }
+}
+
+.owner-data__input--phone {
+  min-height: 45px;
+  background-color: $white;
+  padding: 0;
+  border: 1px solid $grey-grey;
+  border-radius: none;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  padding-left: 14px;
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: 171px 13px;
+  background-size: 20px 20px;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+  }
+
+  &:hover {
+    padding: 0;
+    background-color: $white;
+    border: 1px solid $special_grey;
+    border-radius: none;
+    text-transform: uppercase;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 18px;
+    padding-left: 14px;
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: 171px 13px;
+    background-size: 20px 20px;
+  }
+
+  &:active,
+  &:focus {
+    padding: 0;
+    background-color: $white;
+    border: 1px solid $special_dark-grey;
+    border-radius: none;
+    text-transform: uppercase;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 18px;
+    padding-left: 14px;
+    outline: 0;
+    outline-offset: 0;
+    background-image: url("../img/icon-phone-active.svg");
+    background-repeat: no-repeat;
+    background-position: 171px 13px;
+    background-size: 20px 20px;
+  }
+
+  &:invalid {
+    padding: 0;
+    background-color: $white;
+    border: 1px solid $status_error;
+    border-radius: none;
+    text-transform: uppercase;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 18px;
+    padding-left: 14px;
+    outline: 0;
+    outline-offset: 0;
+    background-image: url("../img/icon-phone-err.svg");
+    background-repeat: no-repeat;
+    background-position: 171px 13px;
+    background-size: 20px 20px;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .owner-data__input {
+  .owner-data__input--mail {
     min-height: 52px;
     background-color: $white;
     padding: 0;
@@ -342,6 +359,10 @@
     color: $special_dark-grey;
     font-family: inherit;
     padding-left: 21px;
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-position: 516px 17px;
+    background-size: 20px 20px;
 
     &::-webkit-outer-spin-button,
     &::-webkit-inner-spin-button {
@@ -360,6 +381,10 @@
       color: $special_dark-grey;
       font-family: inherit;
       padding-left: 21px;
+      background-image: url("../img/icon-mail.svg");
+      background-repeat: no-repeat;
+      background-position: 516px 17px;
+      background-size: 20px 20px;
     }
 
     &:active,
@@ -376,6 +401,10 @@
       padding-left: 21px;
       outline: 0;
       outline-offset: 0;
+      background-image: url("../img/icon-mail-active.svg");
+      background-repeat: no-repeat;
+      background-position: 516px 17px;
+      background-size: 20px 20px;
     }
 
     &:invalid {
@@ -391,13 +420,98 @@
       padding-left: 21px;
       outline: 0;
       outline-offset: 0;
+      background-image: url("../img/icon-mail-err.svg");
+      background-repeat: no-repeat;
+      background-position: 516px 17px;
+      background-size: 20px 20px;
     }
   }
 }
 
+@media (min-width: $tablet-width) {
+  .owner-data__input--phone {
+    min-height: 52px;
+    background-color: $white;
+    padding: 0;
+    border: 1px solid $grey-grey;
+    border-radius: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: auto;
+    color: $special_dark-grey;
+    font-family: inherit;
+    padding-left: 21px;
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: 495px 18px;
+    background-size: 20px 20px;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      appearance: none;
+      margin: 0;
+    }
+
+    &:hover {
+      padding: 0;
+      background-color: $white;
+      border: 1px solid $special_grey;
+      border-radius: none;
+      text-transform: uppercase;
+      font-size: 20px;
+      line-height: auto;
+      color: $special_dark-grey;
+      font-family: inherit;
+      padding-left: 21px;
+      background-image: url("../img/icon-phone.svg");
+      background-repeat: no-repeat;
+      background-position: 495px 18px;
+      background-size: 20px 20px;
+    }
+
+    &:active,
+    &:focus {
+      padding: 0;
+      background-color: $white;
+      border: 1px solid $special_dark-grey;
+      border-radius: none;
+      text-transform: uppercase;
+      font-size: 20px;
+      line-height: auto;
+      color: $special_dark-grey;
+      font-family: inherit;
+      padding-left: 21px;
+      outline: 0;
+      outline-offset: 0;
+      background-image: url("../img/icon-phone-active.svg");
+      background-repeat: no-repeat;
+      background-position: 495px 18px;
+      background-size: 20px 20px;
+    }
+
+    &:invalid {
+      padding: 0;
+      background-color: $white;
+      border: 1px solid $status_error;
+      border-radius: none;
+      text-transform: uppercase;
+      font-size: 20px;
+      line-height: auto;
+      color: $special_dark-grey;
+      font-family: inherit;
+      padding-left: 21px;
+      outline: 0;
+      outline-offset: 0;
+      background-image: url("../img/icon-phone-err.svg");
+      background-repeat: no-repeat;
+      background-position: 495px 18px;
+      background-size: 20px 20px;
+    }
+  }
+}
 
 @media (min-width: $desktop-width) {
-  .owner-data__input {
+  .owner-data__input--mail {
     min-height: 48px;
     background-color: $white;
     padding: 0;
@@ -409,6 +523,10 @@
     color: $special_dark-grey;
     font-family: inherit;
     padding-left: 19px;
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-position: 450px 16px;
+    background-size: 18px 13px;
 
     &::-webkit-outer-spin-button,
     &::-webkit-inner-spin-button {
@@ -427,6 +545,10 @@
       color: $special_dark-grey;
       font-family: inherit;
       padding-left: 19px;
+      background-image: url("../img/icon-mail.svg");
+      background-repeat: no-repeat;
+      background-position: 450px 16px;
+      background-size: 18px 13px;
     }
 
     &:active,
@@ -443,6 +565,10 @@
       padding-left: 19px;
       outline: 0;
       outline-offset: 0;
+      background-image: url("../img/icon-mail-active.svg");
+      background-repeat: no-repeat;
+      background-position: 450px 16px;
+      background-size: 18px 13px;
     }
 
     &:invalid {
@@ -458,6 +584,93 @@
       padding-left: 19px;
       outline: 0;
       outline-offset: 0;
+      background-image: url("../img/icon-mail-err.svg");
+      background-repeat: no-repeat;
+      background-position: 450px 16px;
+      background-size: 18px 13px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .owner-data__input--phone {
+    min-height: 48px;
+    background-color: $white;
+    padding: 0;
+    border: 1px solid $grey-grey;
+    border-radius: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: auto;
+    color: $special_dark-grey;
+    font-family: inherit;
+    padding-left: 19px;
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: 434px 12px;
+    background-size: 19px 20px;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      appearance: none;
+      margin: 0;
+    }
+
+    &:hover {
+      padding: 0;
+      background-color: $white;
+      border: 1px solid $special_grey;
+      border-radius: none;
+      text-transform: uppercase;
+      font-size: 20px;
+      line-height: auto;
+      color: $special_dark-grey;
+      font-family: inherit;
+      padding-left: 19px;
+      background-image: url("../img/icon-phone.svg");
+      background-repeat: no-repeat;
+      background-position: 434px 12px;
+      background-size: 19px 20px;
+    }
+
+    &:active,
+    &:focus {
+      padding: 0;
+      background-color: $white;
+      border: 1px solid $special_dark-grey;
+      border-radius: none;
+      text-transform: uppercase;
+      font-size: 20px;
+      line-height: auto;
+      color: $special_dark-grey;
+      font-family: inherit;
+      padding-left: 19px;
+      outline: 0;
+      outline-offset: 0;
+      background-image: url("../img/icon-phone-active.svg");
+      background-repeat: no-repeat;
+      background-position: 434px 12px;
+      background-size: 19px 20px;
+    }
+
+    &:invalid {
+      padding: 0;
+      background-color: $white;
+      border: 1px solid $status_error;
+      border-radius: none;
+      text-transform: uppercase;
+      font-size: 20px;
+      line-height: auto;
+      color: $special_dark-grey;
+      font-family: inherit;
+      padding-left: 19px;
+      outline: 0;
+      outline-offset: 0;
+      background-image: url("../img/icon-phone-err.svg");
+      background-repeat: no-repeat;
+      background-position: 434px 12px;
+      background-size: 19px 20px;
+      fill: $status_error;
     }
   }
 }
