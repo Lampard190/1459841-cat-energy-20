@@ -41,11 +41,11 @@
 }
 
 @media (min-width: $tablet-width) {
-.prog__wrapper-green {
-  background-image: none;
-  background-color: $white;
-  z-index: 0;
-}
+  .prog__wrapper-green {
+    background-image: none;
+    background-color: $white;
+    z-index: 0;
+  }
 }
 
 
@@ -213,13 +213,13 @@
 }
 
 .prog__image {
-    position: absolute;
-    width: 280px;
-    height: 270px;
-    top: 165px;
-   	left: 0;
-   	right: 0;
-   	margin: auto;
+  position: absolute;
+  width: 280px;
+  height: 270px;
+  top: 165px;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 @media (min-width: $tablet-width) {
