@@ -10,7 +10,7 @@
 @media (min-width: $tablet-width) {
   .slim-pro {
     position: relative;
-    max-width: 708px;
+    width: 708px;
     background-color: $basic-grey;
     margin-left: 30px;
     margin-right: 30px;
@@ -24,7 +24,6 @@
   .slim-pro {
     position: relative;
     background-color: $basic-grey;
-    width: 570px;
     margin-top: 80px;
     margin-left: 0;
     margin-right: 0;
