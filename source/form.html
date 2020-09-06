@@ -71,15 +71,15 @@
             <legend><span class="visually-hidden">Персональные данные кота</span></legend>
               <div class="cat-data__wrapper">
                 <label class="cat-data__name">Имя:<sup>*</sup></label>
-                <input class="cat-data__input cat-data__input--active" type="text" name="name" id="cat-name" placeholder="Барсик" required>
+                <input class="cat-data__input cat-data__input--error" type="text" name="name" id="cat-name" placeholder="Барсик" required>
               </div>
               <div class="cat-data__wrapper">
                 <label class="cat-data__weight" for="cat-weight">Вес&nbsp;(кг):<sup>*</sup></label>
-                <input class="cat-data__input cat-data__input--active" type="number" name="weight" id="cat-weight" placeholder="7" required>
+                <input class="cat-data__input cat-data__input--error" type="number" name="weight" id="cat-weight" placeholder="7" required>
               </div>
               <div class="cat-data__wrapper cat-data__wrapper--three">
                 <label class="cat-data__age" for="cat-age">Возраст&nbsp;(лет):</label>
-                <input  class="cat-data__input cat-data__input--active" type="number" name="age" id="cat-age" placeholder="7">
+                <input  class="cat-data__input" type="number" name="age" id="cat-age" placeholder="7">
               </div>
           </fieldset>
           <fieldset class="programs">
@@ -118,11 +118,11 @@
           <div class="owner-data__wrapper-desktop">
             <div class="owner-data__wrapper owner-data__wrapper--email">
               <label class="owner-data__email" for="owner-email">E-mail:<sup>*</sup></label>
-              <input class="owner-data__input owner-data__input--active owner-data__input--mail" type="email" name="email" id="owner-email" placeholder="kuklachev@gmail.com" required>
+              <input class="owner-data__input owner-data__input--mail owner-data__input--mail-err" type="email" name="email" id="owner-email" placeholder="kuklachev@gmail.com" required>
             </div>
             <div class="owner-data__wrapper owner-data__wrapper--phone">
               <label class="owner-data__phone" for="owner-phone">Телефон:<sup>*</sup></label>
-              <input class="owner-data__input owner-data__input--active owner-data__input--phone" type="tel" name="telephone" id="owner-phone" placeholder="8 (960) 900-60-90" required>
+              <input class="owner-data__input owner-data__input--phone owner-data__input--phone-err" type="tel" name="telephone" id="owner-phone" placeholder="8 (960) 900-60-90" required>
             </div>
           </div>
           </fieldset>
@@ -191,11 +191,11 @@
           <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
           <img class="contacts__map" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" width="320" height="362" alt="Карта ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
         </picture>
-        <img class="contacts__pin" src="img/map-pin.svg" width="57" height="53" alt="Точка нахождения офиса">
+        <img class="contacts__pin" src="img/map-pin.png" width="57" height="53" alt="Точка нахождения офиса">
       </section>
     </main>
     <footer class="page-footer">
-      <a class="page-footer__logo" href="#"><span class="visually-hidden">cat energy</span>
+      <a class="page-footer__logo" href="index.html"><span class="visually-hidden">cat energy</span>
         <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Логотип cat energy (текст)">
       </a>
       <ul class="page-footer__social-buttons">
