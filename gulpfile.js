@@ -73,7 +73,7 @@ const watcher = () => {
 }
 
 exports.default = gulp.series(
-  styles, html, jsmin, server, watcher
+  styles, server, watcher
 );
 
 
