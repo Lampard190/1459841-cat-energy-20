@@ -250,25 +250,25 @@
     background-position: 186px 13px;
     background-size: 20px 20px;
   }
-
-  &:invalid {
-    padding: 0;
-    background-color: $white;
-    border: 1px solid $status_error;
-    border-radius: none;
-    text-transform: uppercase;
-    font-family: inherit;
-    font-size: 16px;
-    line-height: 18px;
-    padding-left: 14px;
-    outline: 0;
-    outline-offset: 0;
-    background-image: url("../img/icon-mail-err.svg");
-    background-repeat: no-repeat;
-    background-position: 186px 13px;
-    background-size: 20px 20px;
-  }
 }
+
+/*.owner-data__input--mail-err {
+  padding: 0;
+  background-color: $white;
+  border: 1px solid $status_error;
+  border-radius: none;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  padding-left: 14px;
+  outline: 0;
+  outline-offset: 0;
+  background-image: url("../img/icon-mail-err.svg");
+  background-repeat: no-repeat;
+  background-position: 186px 13px;
+  background-size: 20px 20px;
+}*/
 
 .owner-data__input--phone {
   min-height: 45px;
@@ -326,8 +326,9 @@
     background-position: 171px 13px;
     background-size: 20px 20px;
   }
+}
 
-  &:invalid {
+/*.owner-data__input--phone-err {
     padding: 0;
     background-color: $white;
     border: 1px solid $status_error;
@@ -343,8 +344,7 @@
     background-repeat: no-repeat;
     background-position: 171px 13px;
     background-size: 20px 20px;
-  }
-}
+}*/
 
 @media (min-width: $tablet-width) {
   .owner-data__input--mail {
@@ -406,27 +406,29 @@
       background-position: 516px 17px;
       background-size: 20px 20px;
     }
-
-    &:invalid {
-      padding: 0;
-      background-color: $white;
-      border: 1px solid $status_error;
-      border-radius: none;
-      text-transform: uppercase;
-      font-size: 20px;
-      line-height: auto;
-      color: $special_dark-grey;
-      font-family: inherit;
-      padding-left: 21px;
-      outline: 0;
-      outline-offset: 0;
-      background-image: url("../img/icon-mail-err.svg");
-      background-repeat: no-repeat;
-      background-position: 516px 17px;
-      background-size: 20px 20px;
-    }
   }
 }
+
+/*@media (min-width: $tablet-width) {
+  .owner-data__input--mail-err {
+    padding: 0;
+    background-color: $white;
+    border: 1px solid $status_error;
+    border-radius: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: auto;
+    color: $special_dark-grey;
+    font-family: inherit;
+    padding-left: 21px;
+    outline: 0;
+    outline-offset: 0;
+    background-image: url("../img/icon-mail-err.svg");
+    background-repeat: no-repeat;
+    background-position: 516px 17px;
+    background-size: 20px 20px;
+  }
+}*/
 
 @media (min-width: $tablet-width) {
   .owner-data__input--phone {
@@ -488,27 +490,29 @@
       background-position: 495px 18px;
       background-size: 20px 20px;
     }
-
-    &:invalid {
-      padding: 0;
-      background-color: $white;
-      border: 1px solid $status_error;
-      border-radius: none;
-      text-transform: uppercase;
-      font-size: 20px;
-      line-height: auto;
-      color: $special_dark-grey;
-      font-family: inherit;
-      padding-left: 21px;
-      outline: 0;
-      outline-offset: 0;
-      background-image: url("../img/icon-phone-err.svg");
-      background-repeat: no-repeat;
-      background-position: 495px 18px;
-      background-size: 20px 20px;
-    }
   }
 }
+
+/*@media (min-width: $tablet-width) {
+  .owner-data__input--phone-err {
+    padding: 0;
+    background-color: $white;
+    border: 1px solid $status_error;
+    border-radius: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: auto;
+    color: $special_dark-grey;
+    font-family: inherit;
+    padding-left: 21px;
+    outline: 0;
+    outline-offset: 0;
+    background-image: url("../img/icon-phone-err.svg");
+    background-repeat: no-repeat;
+    background-position: 495px 18px;
+    background-size: 20px 20px;
+  }
+}*/
 
 @media (min-width: $desktop-width) {
   .owner-data__input--mail {
@@ -570,27 +574,29 @@
       background-position: 450px 16px;
       background-size: 18px 13px;
     }
-
-    &:invalid {
-      padding: 0;
-      background-color: $white;
-      border: 1px solid $status_error;
-      border-radius: none;
-      text-transform: uppercase;
-      font-size: 20px;
-      line-height: auto;
-      color: $special_dark-grey;
-      font-family: inherit;
-      padding-left: 19px;
-      outline: 0;
-      outline-offset: 0;
-      background-image: url("../img/icon-mail-err.svg");
-      background-repeat: no-repeat;
-      background-position: 450px 16px;
-      background-size: 18px 13px;
-    }
   }
 }
+
+/*@media (min-width: $desktop-width) {
+  .owner-data__input--mail-err {
+    padding: 0;
+    background-color: $white;
+    border: 1px solid $status_error;
+    border-radius: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: auto;
+    color: $special_dark-grey;
+    font-family: inherit;
+    padding-left: 19px;
+    outline: 0;
+    outline-offset: 0;
+    background-image: url("../img/icon-mail-err.svg");
+    background-repeat: no-repeat;
+    background-position: 450px 16px;
+    background-size: 18px 13px;
+  }
+}*/
 
 @media (min-width: $desktop-width) {
   .owner-data__input--phone {
@@ -652,25 +658,27 @@
       background-position: 434px 12px;
       background-size: 19px 20px;
     }
-
-    &:invalid {
-      padding: 0;
-      background-color: $white;
-      border: 1px solid $status_error;
-      border-radius: none;
-      text-transform: uppercase;
-      font-size: 20px;
-      line-height: auto;
-      color: $special_dark-grey;
-      font-family: inherit;
-      padding-left: 19px;
-      outline: 0;
-      outline-offset: 0;
-      background-image: url("../img/icon-phone-err.svg");
-      background-repeat: no-repeat;
-      background-position: 434px 12px;
-      background-size: 19px 20px;
-      fill: $status_error;
-    }
   }
 }
+
+/*@media (min-width: $desktop-width) {
+  .owner-data__input--phone-err {
+    padding: 0;
+    background-color: $white;
+    border: 1px solid $status_error;
+    border-radius: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: auto;
+    color: $special_dark-grey;
+    font-family: inherit;
+    padding-left: 19px;
+    outline: 0;
+    outline-offset: 0;
+    background-image: url("../img/icon-phone-err.svg");
+    background-repeat: no-repeat;
+    background-position: 434px 12px;
+    background-size: 19px 20px;
+    fill: $status_error;
+  }
+}*/
