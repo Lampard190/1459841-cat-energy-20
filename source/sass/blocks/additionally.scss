@@ -45,11 +45,33 @@
     content: "";
     top: 14px;
     left: 163px;
-    width: 137px;
+    width: 100vw;
     height: 2px;
     background-color: $basic-green;
   }
 }
+
+@-moz-document url-prefix("") {
+  .additionally__header {
+    color: $black;
+    font-size: 24px;
+    line-height: 26px;
+    text-align: left;
+    margin-bottom: 29px;
+
+    &::after {
+      position: absolute;
+      display: block;
+      content: "";
+      top: -39px;
+      left: 163px;
+      width: 100vw;
+      height: 2px;
+      background-color: $basic-green;
+    }
+  }
+}
+
 
 @media (min-width: $tablet-width) {
   .additionally__header {
@@ -77,9 +99,44 @@
       content: "";
       top: 22px;
       left: 261px;
-      width: 447px;
+      width: 100vw;
       height: 2px;
       background-color: $basic-green;
+    }
+  }
+}
+
+@-moz-document url-prefix("") {
+  @media (min-width: $tablet-width) {
+    .additionally__header {
+      color: $black;
+      font-size: 36px;
+      line-height: 36px;
+      text-align: left;
+      margin-bottom: 44px;
+      margin-left: 10px;
+
+      &::before {
+        position: absolute;
+        display: block;
+        content: "";
+        top: -55px;
+        left: -60px;
+        width: 30px;
+        height: 2px;
+        background-color: $basic-green;
+      }
+
+      &::after {
+        position: absolute;
+        display: block;
+        content: "";
+        top: -55px;
+        left: 261px;
+        width: 100vw;
+        height: 2px;
+        background-color: $basic-green;
+      }
     }
   }
 }
@@ -109,9 +166,43 @@
       content: "";
       top: 22px;
       left: 251px;
-      width: 1079px;
+      width: 100vw;
       height: 2px;
       background-color: $basic-green;
+    }
+  }
+}
+
+@-moz-document url-prefix("") {
+  @media (min-width: $desktop-width) {
+    .additionally__header {
+      color: $black;
+      font-size: 36px;
+      line-height: 36px;
+      text-align: left;
+      margin-bottom: 60px;
+      margin-left: 0;
+
+      &::before {
+        position: absolute;
+        display: block;
+        content: "";
+        top: -71px;
+        left: -110px;
+        width: 70px;
+        background-color: $basic-green;
+      }
+
+      &::after {
+        position: absolute;
+        display: block;
+        content: "";
+        top: -71px;
+        left: 251px;
+        width: 100vw;
+        height: 2px;
+        background-color: $basic-green;
+      }
     }
   }
 }

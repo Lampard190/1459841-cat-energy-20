@@ -87,6 +87,10 @@
         </picture>
       </a>
       <div class="page-header__wrapper page-header__wrapper--index">
+        <!-- Класс .main-nav-opened отображает открытое меню,
+        класс .main-nav-closed переключает на закрытое меню,
+        .main-nav-closed .main-nav__toggle - иконка "гамбургера" при закрытом меню,
+        .main-nav-opened .main-nav__toggle - иконка с крестиком при открытом меню-->
         <nav class="main-nav main-nav--opened main-nav--closed main-nav--nojs">
           <a class="main-nav__ahead main-nav__ahead--active" href="index.html" title="На главную">Главная</a>
           <a class="main-nav__catalog" href="catalog.html" title="Каталог продукции">Каталог продукции</a>
@@ -117,7 +121,7 @@
         <section class="slim-pro">
           <div class="slim-pro__wrapper">
             <div class="slim-pro__round">
-              <svg class="slim-pro__image" width="36" height="50" alt="Стройный кот">
+              <svg class="slim-pro__image" width="36" height="50">
                 <use xlink:href="#cat-slim"></use>
               </svg>
             </div>
@@ -202,11 +206,6 @@
             <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
             <img class="example__wrapper-image" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="311" height="232" alt="Толстый кот">
           </picture>
-          <!--<picture>
-            <source media="(min-width: 1440px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
-            <img class="example__wrapper-image-after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Худой кот">
-          </picture>-->
           <div class="results">
             <p class="results__text">было</p>
             <div class="results__scale">
@@ -235,7 +234,7 @@
           <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
           <img class="contacts__map-index" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" width="320" height="362" alt="Карта ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
         </picture>
-        <iframe class="contacts__intmap" src="https://yandex.ru/map-widget/v1/-/CCQxeVf7HB" width="316" height="362" style="border:0;" allowfullscreen="true" style="position:relative;"></iframe>
+        <iframe class="contacts__intmap" src="https://yandex.ru/map-widget/v1/-/CCQxeVf7HB" width="316" height="362" allowfullscreen="allowfullscreen" style="position:relative;border:0;"></iframe>
         <img class="contacts__pin" src="img/map-pin.png" width="57" height="53" alt="Точка нахождения офиса">
       </section>
     </main>

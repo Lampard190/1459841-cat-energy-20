@@ -51,9 +51,30 @@
     content: "";
     top: 17px;
     left: 200px;
-    width: 100px;
+    width: 100vw;
     height: 2px;
     background-color: $basic-green;
+  }
+}
+
+@-moz-document url-prefix("") {
+  .owner-data__title {
+    color: $black;
+    font-size: 24px;
+    line-height: 26px;
+    text-align: left;
+    margin-bottom: 32px;
+
+    &::after {
+      position: absolute;
+      display: block;
+      content: "";
+      top: -68px;
+      left: 200px;
+      width: 100vw;
+      height: 2px;
+      background-color: $basic-green;
+    }
   }
 }
 
@@ -83,9 +104,44 @@
       content: "";
       top: 22px;
       left: 556px;
-      width: 145px;
+      width: 100vw;
       height: 2px;
       background-color: $basic-green;
+    }
+  }
+}
+
+@-moz-document url-prefix("") {
+  @media (min-width: $tablet-width) {
+    .owner-data__title {
+      color: $black;
+      font-size: 36px;
+      line-height: 36px;
+      text-align: left;
+      margin-bottom: 76px;
+      margin-top: 71px;
+
+      &::before {
+        position: absolute;
+        display: block;
+        content: "";
+        top: -91px;
+        left: -66px;
+        width: 29px;
+        height: 2px;
+        background-color: $basic-green;
+      }
+
+      &::after {
+        position: absolute;
+        display: block;
+        content: "";
+        top: -91px;
+        left: 556px;
+        width: 100vw;
+        height: 2px;
+        background-color: $basic-green;
+      }
     }
   }
 }
@@ -117,12 +173,49 @@
       content: "";
       top: 22px;
       left: 551px;
-      width: 777px;
+      width: 100vw;
       height: 2px;
       background-color: $basic-green;
     }
   }
 }
+
+@-moz-document url-prefix("") {
+  @media (min-width: $desktop-width) {
+    .owner-data__title {
+      padding: 0;
+      color: $black;
+      font-size: 36px;
+      line-height: 36px;
+      text-align: left;
+      margin-bottom: 76px;
+      margin-top: 69px;
+      margin-left: 0;
+
+      &::before {
+        position: absolute;
+        display: block;
+        content: "";
+        top: -91px;
+        left: -110px;
+        width: 70px;
+        background-color: $basic-green;
+      }
+
+      &::after {
+        position: absolute;
+        display: block;
+        content: "";
+        top: -91px;
+        left: 551px;
+        width: 100vw;
+        height: 2px;
+        background-color: $basic-green;
+      }
+    }
+  }
+}
+
 
 .owner-data__email,
 .owner-data__phone {
@@ -252,24 +345,6 @@
   }
 }
 
-/*.owner-data__input--mail-err {
-  padding: 0;
-  background-color: $white;
-  border: 1px solid $status_error;
-  border-radius: none;
-  text-transform: uppercase;
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 18px;
-  padding-left: 14px;
-  outline: 0;
-  outline-offset: 0;
-  background-image: url("../img/icon-mail-err.svg");
-  background-repeat: no-repeat;
-  background-position: 186px 13px;
-  background-size: 20px 20px;
-}*/
-
 .owner-data__input--phone {
   min-height: 45px;
   background-color: $white;
@@ -328,24 +403,6 @@
   }
 }
 
-/*.owner-data__input--phone-err {
-    padding: 0;
-    background-color: $white;
-    border: 1px solid $status_error;
-    border-radius: none;
-    text-transform: uppercase;
-    font-family: inherit;
-    font-size: 16px;
-    line-height: 18px;
-    padding-left: 14px;
-    outline: 0;
-    outline-offset: 0;
-    background-image: url("../img/icon-phone-err.svg");
-    background-repeat: no-repeat;
-    background-position: 171px 13px;
-    background-size: 20px 20px;
-}*/
-
 @media (min-width: $tablet-width) {
   .owner-data__input--mail {
     min-height: 52px;
@@ -408,27 +465,6 @@
     }
   }
 }
-
-/*@media (min-width: $tablet-width) {
-  .owner-data__input--mail-err {
-    padding: 0;
-    background-color: $white;
-    border: 1px solid $status_error;
-    border-radius: none;
-    text-transform: uppercase;
-    font-size: 20px;
-    line-height: auto;
-    color: $special_dark-grey;
-    font-family: inherit;
-    padding-left: 21px;
-    outline: 0;
-    outline-offset: 0;
-    background-image: url("../img/icon-mail-err.svg");
-    background-repeat: no-repeat;
-    background-position: 516px 17px;
-    background-size: 20px 20px;
-  }
-}*/
 
 @media (min-width: $tablet-width) {
   .owner-data__input--phone {
@@ -493,27 +529,6 @@
   }
 }
 
-/*@media (min-width: $tablet-width) {
-  .owner-data__input--phone-err {
-    padding: 0;
-    background-color: $white;
-    border: 1px solid $status_error;
-    border-radius: none;
-    text-transform: uppercase;
-    font-size: 20px;
-    line-height: auto;
-    color: $special_dark-grey;
-    font-family: inherit;
-    padding-left: 21px;
-    outline: 0;
-    outline-offset: 0;
-    background-image: url("../img/icon-phone-err.svg");
-    background-repeat: no-repeat;
-    background-position: 495px 18px;
-    background-size: 20px 20px;
-  }
-}*/
-
 @media (min-width: $desktop-width) {
   .owner-data__input--mail {
     min-height: 48px;
@@ -577,27 +592,6 @@
   }
 }
 
-/*@media (min-width: $desktop-width) {
-  .owner-data__input--mail-err {
-    padding: 0;
-    background-color: $white;
-    border: 1px solid $status_error;
-    border-radius: none;
-    text-transform: uppercase;
-    font-size: 20px;
-    line-height: auto;
-    color: $special_dark-grey;
-    font-family: inherit;
-    padding-left: 19px;
-    outline: 0;
-    outline-offset: 0;
-    background-image: url("../img/icon-mail-err.svg");
-    background-repeat: no-repeat;
-    background-position: 450px 16px;
-    background-size: 18px 13px;
-  }
-}*/
-
 @media (min-width: $desktop-width) {
   .owner-data__input--phone {
     min-height: 48px;
@@ -660,25 +654,3 @@
     }
   }
 }
-
-/*@media (min-width: $desktop-width) {
-  .owner-data__input--phone-err {
-    padding: 0;
-    background-color: $white;
-    border: 1px solid $status_error;
-    border-radius: none;
-    text-transform: uppercase;
-    font-size: 20px;
-    line-height: auto;
-    color: $special_dark-grey;
-    font-family: inherit;
-    padding-left: 19px;
-    outline: 0;
-    outline-offset: 0;
-    background-image: url("../img/icon-phone-err.svg");
-    background-repeat: no-repeat;
-    background-position: 434px 12px;
-    background-size: 19px 20px;
-    fill: $status_error;
-  }
-}*/

@@ -55,6 +55,10 @@
           <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип cat energy (кот и текст)">
         </picture>
       </a>
+      <!-- Класс .main-nav-opened отображает открытое меню,
+      класс .main-nav-closed переключает на закрытое меню,
+      .main-nav-closed .main-nav__toggle - иконка "гамбургера" при закрытом меню,
+      .main-nav-opened .main-nav__toggle - иконка с крестиком при открытом меню-->
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <a class="main-nav__ahead" href="index.html" title="На главную">Главная</a>
         <a class="main-nav__catalog" href="catalog.html" title="Каталог продукции">Каталог продукции</a>
@@ -70,22 +74,22 @@
           <fieldset class="cat-data">
             <legend><span class="visually-hidden">Персональные данные кота</span></legend>
               <div class="cat-data__wrapper">
-                <label class="cat-data__name">Имя:<sup>*</sup></label>
+                <label class="cat-data__name" for="cat-name">Имя:<sup>*</sup></label>
                 <input class="cat-data__input cat-data__input--error" type="text" name="name" id="cat-name" placeholder="Барсик" required>
               </div>
               <div class="cat-data__wrapper">
                 <label class="cat-data__weight" for="cat-weight">Вес&nbsp;(кг):<sup>*</sup></label>
-                <input class="cat-data__input cat-data__input--error" type="number" name="weight" id="cat-weight" placeholder="7" required>
+                <input class="cat-data__input cat-data__input--error" type="number" name="weight" id="cat-weight" min="0" placeholder="7" required>
               </div>
               <div class="cat-data__wrapper cat-data__wrapper--three">
                 <label class="cat-data__age" for="cat-age">Возраст&nbsp;(лет):</label>
-                <input  class="cat-data__input" type="number" name="age" id="cat-age" placeholder="7">
+                <input  class="cat-data__input" type="number" name="age" id="cat-age" min="0" placeholder="7">
               </div>
           </fieldset>
           <fieldset class="programs">
             <legend><span class="visually-hidden">Вид программы</span></legend>
               <div class="programs__wrapper programs__wrapper--one">
-                <input class="programs__input" type="radio" name="thin" id="cat-thin" value="Похудение" checked>
+                <input class="programs__input" type="radio" name="programs-name" id="cat-thin" value="Похудение" checked>
                 <label class="programs__thin" for="cat-thin">
                   <svg class="programs__radio" width="30" height="30">
                     <use xlink:href="#radiobatton"></use>
@@ -94,7 +98,7 @@
                 </label>
               </div>
               <div class="programs__wrapper">
-                <input class="programs__input" type="radio" name="increase" id="cat-increase" value="Набор массы">
+                <input class="programs__input" type="radio" name="programs-name" id="cat-increase" value="Набор массы">
                 <label class="programs__increase" for="cat-increase">
                   <svg class="programs__radio" width="30" height="30">
                     <use xlink:href="#radiobatton"></use>
@@ -103,7 +107,7 @@
                 </label>
               </div>
               <div class="programs__wrapper">
-                <input class="programs__input" type="radio" name="not-known" id="cat-not-known" value="Не знаю">
+                <input class="programs__input" type="radio" name="programs-name" id="cat-not-known" value="Не знаю">
                 <label class="programs__not-known" for="cat-not-known">
                   <svg class="programs__radio" width="30" height="30">
                     <use xlink:href="#radiobatton"></use>
@@ -174,7 +178,7 @@
             </fieldset>
             <div class="page-main__send-wrapper">
               <button class="page-main__send" type="submit" value="Отправить заявку">Отправить заявку</button>
-              <p class="page-main__text"><sup>*</sup> &mdash; Обязательные поля</p>
+              <p class="page-main__text">* &mdash; Обязательные поля</p>
             </div>
           </div>
       </form>
