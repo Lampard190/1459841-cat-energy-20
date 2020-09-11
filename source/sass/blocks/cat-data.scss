@@ -112,6 +112,7 @@
   text-transform: uppercase;
   font: inherit;
   padding-left: 14px;
+  appearance: textfield;
 
   &::-webkit-outer-spin-button,
   &::-webkit-inner-spin-button {
@@ -141,18 +142,6 @@
     outline: 0;
     outline-offset: 0;
   }
-}
-
-.cat-data_input--error {
-  padding: 0;
-  background-color: $white;
-  border: 1px solid $status_error;
-  border-radius: none;
-  text-transform: uppercase;
-  font: inherit;
-  padding-left: 14px;
-  outline: 0;
-  outline-offset: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -203,20 +192,6 @@
       outline: 0;
       outline-offset: 0;
     }
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .cat-data_input--error {
-    padding: 0;
-    background-color: $white;
-    border: 1px solid $status_error;
-    border-radius: none;
-    text-transform: uppercase;
-    font: inherit;
-    padding-left: 20px;
-    outline: 0;
-    outline-offset: 0;
   }
 }
 
