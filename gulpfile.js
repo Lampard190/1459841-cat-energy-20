@@ -11,6 +11,8 @@ const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require ("gulp-svgstore");
 const del = require("del");
+const htmlmin = require("gulp-htmlmin");
+const uglify = require("gulp-uglify");
 
 // Styles
 
@@ -31,6 +33,22 @@ const styles = () => {
 
 exports.styles = styles;
 
+const html = () => {
+  return gulp.src("source/*.html")
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest("build"))
+}
+
+exports.html = html;
+
+const jsmin = () => {
+  return gulp.src("source/js/**/*.js")
+    .pipe(uglify())
+    .pipe(gulp.dest("build/js"))
+}
+
+exports.jsmin = jsmin;
+
 // Server
 
 const server = (done) => {
@@ -47,17 +65,26 @@ const server = (done) => {
 
 exports.server = server;
 
-// Watcher
-
-const watcher = () => {
-  gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
-  gulp.watch("source/*.html").on("change", sync.reload);
+const clean = () => {
+  return del("build");
 }
 
-exports.default = gulp.series(
-  styles, server, watcher
-);
+exports.clean = clean;
 
+const copy = () => {
+  return gulp.src([
+    "source/fonts/**/*.{woff,woff2}",
+    "source/img/**",
+    "source/js/**",
+    "source/*.ico",
+    "source/*.html"
+    ], {
+      base: "source"
+    })
+    .pipe(gulp.dest("build"));
+}
+
+exports.copy = copy;
 
 const images = () => {
   return gulp.src("source/img/**/*.{jpg,png,svg}")
@@ -87,34 +114,26 @@ const sprite = () => {
 
 exports.sprite = sprite;
 
-const copy = () => {
-  return gulp.src([
-    "source/fonts/**/*.{woff,woff2}",
-    "source/img/**",
-    "source/js/**",
-    "source/*.ico",
-    "source/*.html"
-    ], {
-      base: "source"
-    })
-    .pipe(gulp.dest("build"));
-}
-
-exports.copy = copy;
-
-const clean = () => {
-  return del("build");
-}
-
-exports.clean = clean;
-
 const build = gulp.series (
   clean,
   copy,
   styles,
+  html,
+  jsmin,
   images,
   webps,
   sprite
 );
 
 exports.build = build;
+
+// Watcher
+
+const watcher = () => {
+  gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
+  gulp.watch("source/*.html").on("change", sync.reload);
+}
+
+exports.default = gulp.series(
+  build, styles, server, watcher
+);

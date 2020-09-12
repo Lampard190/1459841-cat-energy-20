@@ -132,7 +132,26 @@
   }
 }
 
+.contacts__intmap {
+  width: 100%;
+  height: 362px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__intmap {
+    height: 400px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__intmap {
+    height: 400px;
+    z-index: -1;
+  }
+}
+
 .contacts__map {
+  display: none;
   height: 362px;
   min-width: 320px;
 }

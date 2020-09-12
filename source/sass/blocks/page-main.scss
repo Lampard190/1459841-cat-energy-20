@@ -130,13 +130,13 @@
 }
 
 .page-main__form {
-  width: 280px;
+  min-width: 280px;
   margin-bottom: 30px;
 }
 
 @media (min-width: $tablet-width) {
   .page-main__form {
-    width: 708px;
+    min-width: 708px;
     margin-left: 30px;
     margin-right: 30px;
     margin-bottom: 32px;
@@ -145,7 +145,7 @@
 
 @media (min-width: $desktop-width) {
   .page-main__form {
-    width: 1080px;
+    min-width: 1220px;
     margin-left: 110px;
     margin-right: 110px;
     margin-bottom: 32px;
@@ -154,10 +154,9 @@
 
 @media (min-width: $desktop-width) {
   .page-main__form-wrapper {
-    display: grid;
-    grid-template-columns: 569px 568px;
-    grid-gap: 80px;
-    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
   }
 }
 
@@ -176,6 +175,7 @@
   font-family: inherit;
   padding: 9px 0;
   margin-top: 24px;
+  margin-bottom: 6px;
 
   &:hover {
     background-color: $dark-green;
@@ -203,6 +203,7 @@
     width: 282px;
     font-family: inherit;
     padding: 26px 0;
+    margin-bottom: 0;
   }
 }
 
@@ -227,7 +228,7 @@
 .page-main__text {
   @include font-family-descr;
   margin-left: 62px;
-  margin-right: 20px;
+  margin-right: 60px;
   color: $black;
   text-align: center;
 }
@@ -251,8 +252,8 @@
     font-size: 16px;
     line-height: 16px;
     margin-left: 0;
-    margin-right: 178px;
-    margin-top: 34px;
+    margin-right: 388px;
+    margin-top: 40px;
     color: $black;
     text-align: center;
   }
@@ -285,8 +286,7 @@
 
 @media (min-width: $desktop-width) {
   .page-main__send-wrapper {
-    display: grid;
-    grid-template-columns: 500px 500px;
-    grid-gap: 80px;
+    display: flex;
+    justify-content: space-between;
   }
 }

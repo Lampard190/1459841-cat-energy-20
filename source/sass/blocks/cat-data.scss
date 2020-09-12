@@ -26,6 +26,7 @@
     border: none;
     padding: 0;
     margin: 0;
+    margin-right: 80px;
   }
 }
 
@@ -112,6 +113,7 @@
   text-transform: uppercase;
   font: inherit;
   padding-left: 14px;
+  appearance: textfield;
 
   &::-webkit-outer-spin-button,
   &::-webkit-inner-spin-button {
@@ -134,18 +136,6 @@
     padding: 0;
     background-color: $white;
     border: 1px solid $special_dark-grey;
-    border-radius: none;
-    text-transform: uppercase;
-    font: inherit;
-    padding-left: 14px;
-    outline: 0;
-    outline-offset: 0;
-  }
-
-  &:invalid {
-    padding: 0;
-    background-color: $white;
-    border: 1px solid $status_error;
     border-radius: none;
     text-transform: uppercase;
     font: inherit;
@@ -203,21 +193,6 @@
       outline: 0;
       outline-offset: 0;
     }
-
-    &:invalid {
-      padding: 0;
-      background-color: $white;
-      border: 1px solid $status_error;
-      border-radius: none;
-      text-transform: uppercase;
-      font-size: 20px;
-      line-height: auto;
-      color: $special_dark-grey;
-      font-family: inherit;
-      padding-left: 20px;
-      outline: 0;
-      outline-offset: 0;
-    }
   }
 }
 
@@ -259,21 +234,6 @@
       padding: 0;
       background-color: $white;
       border: 1px solid $special_dark-grey;
-      border-radius: none;
-      text-transform: uppercase;
-      font-size: 20px;
-      line-height: auto;
-      color: $special_dark-grey;
-      font-family: inherit;
-      padding-left: 20px;
-      outline: 0;
-      outline-offset: 0;
-    }
-
-    &:invalid {
-      padding: 0;
-      background-color: $white;
-      border: 1px solid $status_error;
       border-radius: none;
       text-transform: uppercase;
       font-size: 20px;

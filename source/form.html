@@ -7,6 +7,7 @@
       content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/styles.min.css" rel="stylesheet">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
   </head>
   <body class="page-body">
     <svg style="display: none">
@@ -55,14 +56,18 @@
           <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип cat energy (кот и текст)">
         </picture>
       </a>
-      <nav class="main-nav main-nav--closed main-nav--nojs">
+      <!-- Класс .main-nav-opened отображает открытое меню,
+      класс .main-nav-closed переключает на закрытое меню,
+      .main-nav-closed .main-nav__toggle - иконка "гамбургера" при закрытом меню,
+      .main-nav-opened .main-nav__toggle - иконка с крестиком при открытом меню-->
+      <nav class="main-nav main-nav--opened main-nav--closed main-nav--nojs">
         <a class="main-nav__ahead" href="index.html" title="На главную">Главная</a>
         <a class="main-nav__catalog" href="catalog.html" title="Каталог продукции">Каталог продукции</a>
         <a class="main-nav__program main-nav__program--active" href="form.html" title="Подбор программы">Подбор программы</a>
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Меню</span></button>
       </nav>
     </header>
-    <main class="page-main">
+    <main class="page-main page-main--form">
       <h1 class="page-main__title">Подбор программы</h1>
       <p class="page-main__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form class="page-main__form" action="https://echo.htmlacademy.ru" method="post">
@@ -70,22 +75,22 @@
           <fieldset class="cat-data">
             <legend><span class="visually-hidden">Персональные данные кота</span></legend>
               <div class="cat-data__wrapper">
-                <label class="cat-data__name">Имя:<sup>*</sup></label>
-                <input class="cat-data__input cat-data__input--active" type="text" name="name" id="cat-name" placeholder="Барсик" required>
+                <label class="cat-data__name" for="cat-name">Имя:<sup>*</sup></label>
+                <input class="cat-data__input cat-data__input--error" type="text" name="name" id="cat-name" placeholder="Барсик" required>
               </div>
               <div class="cat-data__wrapper">
                 <label class="cat-data__weight" for="cat-weight">Вес&nbsp;(кг):<sup>*</sup></label>
-                <input class="cat-data__input cat-data__input--active" type="number" name="weight" id="cat-weight" placeholder="7" required>
+                <input class="cat-data__input cat-data__input--error" type="number" name="weight" id="cat-weight" min="0" placeholder="7" required>
               </div>
               <div class="cat-data__wrapper cat-data__wrapper--three">
                 <label class="cat-data__age" for="cat-age">Возраст&nbsp;(лет):</label>
-                <input  class="cat-data__input cat-data__input--active" type="number" name="age" id="cat-age" placeholder="7">
+                <input  class="cat-data__input" type="number" name="age" id="cat-age" min="0" placeholder="7">
               </div>
           </fieldset>
           <fieldset class="programs">
             <legend><span class="visually-hidden">Вид программы</span></legend>
               <div class="programs__wrapper programs__wrapper--one">
-                <input class="programs__input" type="radio" name="thin" id="cat-thin" value="Похудение" checked>
+                <input class="programs__input" type="radio" name="programs-name" id="cat-thin" value="Похудение" checked>
                 <label class="programs__thin" for="cat-thin">
                   <svg class="programs__radio" width="30" height="30">
                     <use xlink:href="#radiobatton"></use>
@@ -94,7 +99,7 @@
                 </label>
               </div>
               <div class="programs__wrapper">
-                <input class="programs__input" type="radio" name="increase" id="cat-increase" value="Набор массы">
+                <input class="programs__input" type="radio" name="programs-name" id="cat-increase" value="Набор массы">
                 <label class="programs__increase" for="cat-increase">
                   <svg class="programs__radio" width="30" height="30">
                     <use xlink:href="#radiobatton"></use>
@@ -103,7 +108,7 @@
                 </label>
               </div>
               <div class="programs__wrapper">
-                <input class="programs__input" type="radio" name="not-known" id="cat-not-known" value="Не знаю">
+                <input class="programs__input" type="radio" name="programs-name" id="cat-not-known" value="Не знаю">
                 <label class="programs__not-known" for="cat-not-known">
                   <svg class="programs__radio" width="30" height="30">
                     <use xlink:href="#radiobatton"></use>
@@ -118,11 +123,11 @@
           <div class="owner-data__wrapper-desktop">
             <div class="owner-data__wrapper owner-data__wrapper--email">
               <label class="owner-data__email" for="owner-email">E-mail:<sup>*</sup></label>
-              <input class="owner-data__input owner-data__input--active owner-data__input--mail" type="email" name="email" id="owner-email" placeholder="kuklachev@gmail.com" required>
+              <input class="owner-data__input owner-data__input--mail owner-data__input--mail-err" type="email" name="email" id="owner-email" placeholder="kuklachev@gmail.com" required>
             </div>
             <div class="owner-data__wrapper owner-data__wrapper--phone">
               <label class="owner-data__phone" for="owner-phone">Телефон:<sup>*</sup></label>
-              <input class="owner-data__input owner-data__input--active owner-data__input--phone" type="tel" name="telephone" id="owner-phone" placeholder="8 (960) 900-60-90" required>
+              <input class="owner-data__input owner-data__input--phone owner-data__input--phone-err" type="tel" name="telephone" id="owner-phone" placeholder="8 (960) 900-60-90" required>
             </div>
           </div>
           </fieldset>
@@ -174,7 +179,7 @@
             </fieldset>
             <div class="page-main__send-wrapper">
               <button class="page-main__send" type="submit" value="Отправить заявку">Отправить заявку</button>
-              <p class="page-main__text"><sup>*</sup> &mdash; Обязательные поля</p>
+              <p class="page-main__text">* &mdash; Обязательные поля</p>
             </div>
           </div>
       </form>
@@ -191,11 +196,12 @@
           <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
           <img class="contacts__map" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" width="320" height="362" alt="Карта ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
         </picture>
-        <img class="contacts__pin" src="img/map-pin.svg" width="57" height="53" alt="Точка нахождения офиса">
+        <iframe class="contacts__intmap" src="https://yandex.ru/map-widget/v1/-/CCQxeVf7HB" width="316" height="362" allowfullscreen="allowfullscreen" style="position:relative;border:0;"></iframe>
+        <img class="contacts__pin" src="img/map-pin.png" width="57" height="53" alt="Точка нахождения офиса">
       </section>
     </main>
     <footer class="page-footer">
-      <a class="page-footer__logo" href="#"><span class="visually-hidden">cat energy</span>
+      <a class="page-footer__logo" href="index.html"><span class="visually-hidden">cat energy</span>
         <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Логотип cat energy (текст)">
       </a>
       <ul class="page-footer__social-buttons">
@@ -222,12 +228,12 @@
         </li>
       </ul>
       <div class="page-footer__academy">
-      <p class="page-footer__academy-text">HTML Academy</p>
-        <a href="https://htmlacademy.ru"><span class="visually-hidden">HTML Academy</span>
-          <svg class="page-footer__academy-logo" width="27" height="34">
-            <use xlink:href="#htmlacademy"></use>
-          </svg>
-        </a>
+        <p class="page-footer__academy-text"><a class="page-footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></p>
+          <a href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span>
+            <svg class="page-footer__academy-logo" width="27" height="34">
+              <use xlink:href="#htmlacademy"></use>
+            </svg>
+          </a>
       </div>
     </footer>
   </body>

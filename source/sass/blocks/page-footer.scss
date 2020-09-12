@@ -258,6 +258,11 @@
   margin-left: 20px;
 }
 
+.page-footer__academy-link {
+  text-decoration: none;
+  color: $special_dark-grey;
+}
+
 @media (min-width: $tablet-width) {
   .page-footer__academy-text {
     display: flex;
